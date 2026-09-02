@@ -4,19 +4,15 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-#define EEPROM_DATA_SIZE      4080
-#define FLASH_PAGE_SIZE       4096
-#define EEPROM_NUM_PAGES      3
+#define FLASH_PAGE_SIZE       4096U
+#define EEPROM_HEADER_SIZE    20U
+#define EEPROM_DATA_SIZE      (FLASH_PAGE_SIZE - EEPROM_HEADER_SIZE)
 
-// For PIC32MK1024MCM064        Linker Size: 0xFD000
-#define EEPROM_PAGE1_ADDR     0x9D0FD000
-#define EEPROM_PAGE2_ADDR     0x9D0FE000
-#define EEPROM_PAGE3_ADDR     0x9D0FF000
+// For PIC32MK1024MCM064. Reserve 0x9D0FF000 - 0x9D0FFFFF in the linker.
+#define EEPROM_PAGE_ADDR      0x9D0FF000U
 
-// For PIC32MK0512MCM064        Linker Size: 0x7D000
-//#define EEPROM_PAGE1_ADDR     0x9D07D000
-//#define EEPROM_PAGE2_ADDR     0x9D07E000
-//#define EEPROM_PAGE3_ADDR     0x9D07F000
+// For PIC32MK0512MCM064. Reserve 0x9D07F000 - 0x9D07FFFF in the linker.
+//#define EEPROM_PAGE_ADDR      0x9D07F000U
 
 #define EEPROM_VALID_MARKER   0xFFFFFFFE
 

@@ -11,13 +11,7 @@ typedef struct {
     uint32_t reserved;
 } EEPROM_HEADER;
 
-static const uint32_t pages[EEPROM_NUM_PAGES] = {
-    EEPROM_PAGE1_ADDR,
-    EEPROM_PAGE2_ADDR,
-    EEPROM_PAGE3_ADDR
-};
-
-static uint32_t activePage = 0;
+static uint32_t activePage = EEPROM_PAGE_ADDR;
 
 static uint32_t calculate_crc(uint8_t *data, uint32_t len) {
     uint32_t crc = 0;
@@ -93,36 +87,9 @@ static bool page_is_valid(uint32_t addr, EEPROM_HEADER *header) {
     return true;
 }
 
-static uint32_t find_latest_page(void) {
-    EEPROM_HEADER hdr;
-    uint32_t maxSeq = 0;
-    uint32_t latest = 0xFFFFFFFF;
-
-    for (int i = 0; i < EEPROM_NUM_PAGES; i++) {
-        if (page_is_valid(pages[i], &hdr)) {
-            if (hdr.sequence > maxSeq) {
-                maxSeq = hdr.sequence;
-                latest = pages[i];
-            }
-        }
-    }
-
-    return latest;
-}
-
 FLASH_EEPROM_STATUS FLASH_EEPROM_Init(void) {
-    activePage = find_latest_page();
-
-    if (activePage == 0xFFFFFFFF) {
-        for (int i = 0; i < EEPROM_NUM_PAGES; i++) {
-            if (!erase_page(pages[i])) {
-                return FLASH_EEPROM_ERROR;
-            }
-        }
-
-        activePage = pages[0]; // FIX
-    }
-
+    /* A blank page is valid startup state; it is erased on the first write. */
+    activePage = EEPROM_PAGE_ADDR;
     return FLASH_EEPROM_OK;
 }
 
@@ -131,42 +98,23 @@ FLASH_EEPROM_STATUS FLASH_EEPROM_Write_Page(uint8_t *data, uint32_t length) {
         return FLASH_EEPROM_ERROR;
 
     EEPROM_HEADER oldHdr;
-    uint32_t nextPage = 0;
-    int currentIndex = -1;
-
-    for (int i = 0; i < EEPROM_NUM_PAGES; i++) {
-        if (pages[i] == activePage) {
-            currentIndex = i;
-            break;
-        }
-    }
-
-    if (currentIndex == -1) {
-        nextPage = pages[0];
-    } else {
-        nextPage = pages[(currentIndex + 1) % EEPROM_NUM_PAGES];
-    }
-
-    if (nextPage == 0)
-        return FLASH_EEPROM_ERROR;
-
-    if (!erase_page(nextPage))
-        return FLASH_EEPROM_ERROR;
-
     EEPROM_HEADER newHdr;
 
-    if ((activePage != 0xFFFFFFFF) && page_is_valid(activePage, &oldHdr)) {
+    if (page_is_valid(activePage, &oldHdr)) {
         newHdr.sequence = oldHdr.sequence + 1;
     } else {
         newHdr.sequence = 1;
     }
+
+    if (!erase_page(activePage))
+        return FLASH_EEPROM_ERROR;
 
     newHdr.marker = EEPROM_VALID_MARKER;
     newHdr.length = length;
     newHdr.crc = calculate_crc(data, length);
     newHdr.reserved = 0xAAAAAAAA;
 
-    uint32_t writeAddr = nextPage + sizeof (EEPROM_HEADER);
+    uint32_t writeAddr = activePage + sizeof (EEPROM_HEADER);
 
     /* Write DATA first */
     for (uint32_t i = 0; i < length; i += 4) {
@@ -186,17 +134,16 @@ FLASH_EEPROM_STATUS FLASH_EEPROM_Write_Page(uint8_t *data, uint32_t length) {
 
     /* Write sequence, crc, length, reserved first */
     for (int i = 1; i < sizeof (EEPROM_HEADER) / 4; i++) {
-        if (!write_word(nextPage + (i * 4), hdrPtr[i])) {
+        if (!write_word(activePage + (i * 4), hdrPtr[i])) {
             return FLASH_EEPROM_ERROR;
         }
     }
 
     /* Write marker LAST -> final commit */
-    if (!write_word(nextPage, EEPROM_VALID_MARKER)) {
+    if (!write_word(activePage, EEPROM_VALID_MARKER)) {
         return FLASH_EEPROM_ERROR;
     }
 
-    activePage = nextPage;
     return FLASH_EEPROM_OK;
 }
 
@@ -216,11 +163,6 @@ FLASH_EEPROM_STATUS FLASH_EEPROM_Read_Page(uint8_t *data, uint32_t length) {
             )) {
         return FLASH_EEPROM_ERROR;
     }
-
-    uint32_t crc = calculate_crc(data, length);
-
-    if (crc != hdr.crc)
-        return FLASH_EEPROM_CRC_ERROR;
 
     return FLASH_EEPROM_OK;
 }
@@ -272,12 +214,10 @@ FLASH_EEPROM_STATUS FLASH_EEPROM_ReadWord(uint32_t address, uint32_t *data) {
 }
 
 FLASH_EEPROM_STATUS FLASH_EEPROM_EraseAll(void) {
-    for (int i = 0; i < EEPROM_NUM_PAGES; i++) {
-        if (!erase_page(pages[i]))
-            return FLASH_EEPROM_ERROR;
-    }
+    if (!erase_page(EEPROM_PAGE_ADDR))
+        return FLASH_EEPROM_ERROR;
 
-    activePage = pages[0];
+    activePage = EEPROM_PAGE_ADDR;
 
     return FLASH_EEPROM_OK;
 }

@@ -189,9 +189,9 @@ void SYS_Initialize ( void* data )
 
 	UART1_Initialize();
 
-    CAN1_Initialize();
-
     TMR2_Initialize();
+
+    CAN1_Initialize();
 
     NVM_Initialize();
 
