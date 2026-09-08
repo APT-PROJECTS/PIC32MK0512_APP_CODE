@@ -351,10 +351,10 @@
                     "include": "src/config/default/*{.c,.h,.ld}",
                     "encoding": "ISO-8859-1"
                 },
+                "PIC32MK1024_APP_CODE.X/dist/default/debug/PIC32MK1024_APP_CODE.X.debug.elf",
                 "PIC32MK1024_APP_CODE.X/dist/default/production/PIC32MK1024_APP_CODE.X.production.elf",
                 "PIC32MK1024_APP_CODE.X/dist/default/production/PIC32MK1024_APP_CODE.X.production.hex",
-                "PIC32MK1024_APP_CODE.X/dist/default/production/PIC32MK1024_APP_CODE.X.production.unified.hex",
-                "PIC32MK1024_APP_CODE.X/dist/default/debug/PIC32MK1024_APP_CODE.X.debug.elf"
+                "PIC32MK1024_APP_CODE.X/dist/default/production/PIC32MK1024_APP_CODE.X.production.unified.hex"
             ]
         }
     ]
