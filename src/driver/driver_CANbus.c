@@ -41,7 +41,7 @@ void CANbus_read(void) {
                 CAN_Tuner_Handler(Rdata);
                 break;
             }
-            
+
             case BOOT_CAN_ID_HOST:
             {
                 Run_Boot_Handler(msg_id, Rdata);

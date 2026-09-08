@@ -65,7 +65,7 @@ void recieve_command_uart(void) {
                     Nop();
                     if (uart_command[0] == 0x10) {
                         if (uart_command[2] == 0x1F) {
-//                            device_state_send();
+                            //                            device_state_send();
                             Nop();
                             Nop();
                         }
@@ -80,7 +80,7 @@ void recieve_command_uart(void) {
                         command_byte_num = 0; //await next command
                     } else if (uart_command[0] == 0x30) {
                         if (uart_command[2] == 0x3F) {
-//                            CODESN_send();
+                            //                            CODESN_send();
                             Nop();
                             Nop();
                         }

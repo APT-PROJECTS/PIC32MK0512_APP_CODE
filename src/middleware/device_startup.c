@@ -23,10 +23,10 @@ void Get_PIC_ID(void) {
 
 void EEPROM_Initialize(void) {
     FLASH_EEPROM_Init();
-    Load_Read_Matrix();
+    Load_Matrix();
 }
 
-void Load_Read_Matrix(void) {
+void Load_Matrix(void) {
     __builtin_memset(eepromBuffer, 0, EEPROM_DATA_SIZE);
     __builtin_memset(readMatrix, 0, sizeof (readMatrix));
     __builtin_memset(writeMatrix, 0, sizeof (writeMatrix));

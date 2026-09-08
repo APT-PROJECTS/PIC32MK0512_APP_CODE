@@ -34,7 +34,7 @@ static uint8_t send_tuning_data[20] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 
 static int MCU_ID = 0;
 
-void Tuner_Init(void) {   
+void Tuner_Init(void) {
     received_rows_mask = 0;
     all_rows_received = false;
 }
@@ -238,7 +238,7 @@ void UART_Tuner_Send_PIC_ID(void) {
     }
 
     devsn_string[17] = 0x2F;
-    
+
     send_data_uart(devsn_string, 18);
 }
 
