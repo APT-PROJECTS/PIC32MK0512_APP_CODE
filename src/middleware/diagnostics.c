@@ -1,8 +1,6 @@
-#include "stdio.h"
-#include "string.h"
-#include "diagnostics.h"
-#include "../driver/driver_UART.h"
-#include "../driver/driver_CANbus.h"
+#include "definitions.h"
+#include "driver.h"
+#include "middleware.h"
 
 static uint8_t diag_data[26] = {0x80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x8F};
 

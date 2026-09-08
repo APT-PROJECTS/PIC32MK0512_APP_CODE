@@ -5,7 +5,7 @@
 extern "C" {
 #endif
 
-#include "stdint.h"
+#include "definitions.h"
     
 void send_byte_uart(void);      // send bytes one by one till no. of bytes is zero
 void recieve_command_uart(void); //receive bytes and create command

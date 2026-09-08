@@ -1,11 +1,6 @@
-#include "stdio.h"
-#include "string.h"
 #include "definitions.h"
-#include "device.h"
-#include "driver_UART.h"
-#include "../middleware/device_stat.h"
-#include "../middleware/tuning.h"
-#include "../middleware/diagnostics.h"
+#include "driver.h"
+#include "middleware.h"
 
 static int num_of_bytes = 0;
 static uint8_t* byte_adr;
@@ -70,7 +65,7 @@ void recieve_command_uart(void) {
                     Nop();
                     if (uart_command[0] == 0x10) {
                         if (uart_command[2] == 0x1F) {
-                            device_state_send();
+//                            device_state_send();
                             Nop();
                             Nop();
                         }
@@ -85,7 +80,7 @@ void recieve_command_uart(void) {
                         command_byte_num = 0; //await next command
                     } else if (uart_command[0] == 0x30) {
                         if (uart_command[2] == 0x3F) {
-                            CODESN_send();
+//                            CODESN_send();
                             Nop();
                             Nop();
                         }

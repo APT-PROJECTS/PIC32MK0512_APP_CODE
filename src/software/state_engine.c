@@ -1,10 +1,7 @@
-#include <math.h>
 #include "definitions.h"
-#include "state_engine.h"
-#include "../driver/driver_UART.h"
-#include "../driver/driver_CANbus.h"
-#include "../middleware/tuning.h"
-#include "../middleware/mcu_config.h"
+#include "driver.h"
+#include "middleware.h"
+#include "software.h"
 
 #define SLOW_ROUTINE_COUNT 5
 
@@ -113,9 +110,6 @@ static float Vdc_act = 60;
 
 void state_init(void) //To be called first in main()
 {
-    Load_Read_Matrix();
-    Tuner_Init();
-
     if (R_FF04_01 == 1.0f) //for reversing the direction of rotation
     {
         R_FF03_01 = 180.0f - R_FF03_01;
@@ -159,6 +153,8 @@ void STATE_ENGINE_Tasks(void) {
     switch (currentState) {
         case STATE_INIT:
         {
+            Get_PIC_ID();
+            Tuner_Init();
             state_init();
             currentState = STATE_RUN;
             break;

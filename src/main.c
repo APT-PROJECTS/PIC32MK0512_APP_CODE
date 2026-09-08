@@ -4,15 +4,12 @@
 #include <string.h>
 #include <stdio.h>
 #include "definitions.h"
-#include "driver/flash_eeprom.h"
+#include "middleware.h"
 
 int main(void) {
     SYS_Initialize(NULL);
 
-    if (FLASH_EEPROM_Init() != FLASH_EEPROM_OK) {
-//        GREEN_LED_Set();
-    }
-    //    FLASH_EEPROM_EraseAll();
+    EEPROM_Initialize();
 
     TMR2_Start();
 

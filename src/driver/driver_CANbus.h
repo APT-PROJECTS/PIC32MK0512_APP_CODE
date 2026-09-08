@@ -6,13 +6,11 @@
 extern "C" {
 #endif
 
-#include <stdint.h>
+#include "definitions.h"
     
 void CANbus_init(void);         //Initiialize pins 
 void CANbus_write(uint32_t Sadr, uint8_t * Sdata, uint8_t Sdata_L);        //add arguments as per protocol requirement
 void CANbus_read(void);         //add arguments as per protocol requirements
-void CAN1_Initialize250(void);
-void CAN1_Initialize500(void);
 
 /* Provide C++ Compatibility */
 #ifdef __cplusplus
