@@ -1,13 +1,13 @@
 {
     "version": "1.9",
-    "importedFrom": "PIC32MK1024_APP_CODE.X",
+    "importedFrom": "PIC32MK0512_APP_CODE.X",
     "configurations": [
         {
             "name": "default",
             "id": "",
-            "device": "PIC32MK1024MCM064",
+            "device": "PIC32MK0512MCM064",
             "imageType": "application",
-            "imagePath": "./out/PIC32MK1024_APP_CODE/default.elf",
+            "imagePath": "./out/PIC32MK0512_APP_CODE/default.elf",
             "toolProperties": "default-tool",
             "tool": "PICkit Basic",
             "packs": [
@@ -19,21 +19,13 @@
             ],
             "fileSet": "Project files",
             "toolchain": "default-XC32",
-            "userVariables": "default-uservariables_1",
+            "postBuildSteps": [
+                "xc32-objcopy -O binary --only-section=.reset --only-section=.app_excpt --only-section=.vectors --only-section=.text* --only-section=.rodata* --only-section=.dinit --change-section-address .reset=0x9D000000 dist/default/%{ImageType}/PIC32MK0512_APP_CODE.X.%{ImageType}.elf dist/default/%{ImageType}/hub_sp_1.1_scu_14.bin"
+            ],
             "includeLegacyMacros": true
         }
     ],
     "propertyGroups": [
-        {
-            "name": "default-uservariables",
-            "type": "uservariables",
-            "properties": {}
-        },
-        {
-            "name": "default-uservariables_1",
-            "type": "uservariables",
-            "properties": {}
-        },
         {
             "name": "default-XC32",
             "type": "toolchain",
@@ -54,10 +46,10 @@
                 "compiler.enable-unroll-loops": false,
                 "compiler.exclude-floating-point": false,
                 "compiler.expand-pragma-config": false,
-                "compiler.extra-include-directories": "src;src/config/default;PIC32MK1024_APP_CODE.X",
+                "compiler.extra-include-directories": "src;src/config/default;PIC32MK0512_APP_CODE.X",
                 "compiler.generate-16-bit-code": false,
                 "compiler.generate-micro-compressed-code": false,
-                "compiler.isolate-each-function": true,
+                "compiler.isolate-each-function": false,
                 "compiler.keep-inline": false,
                 "compiler.make-warnings-into-errors": false,
                 "compiler.oXC16gcc-large-aggregate": false,
@@ -65,8 +57,8 @@
                 "compiler.oXC16gcc-no-isr-warn": false,
                 "compiler.oXC16gcc-sfr-warn": false,
                 "compiler.oXC16gcc-smar-io-lvl": "1",
-                "compiler.optimization-level": "-O1",
-                "compiler.place-data-into-section": true,
+                "compiler.optimization-level": "-O0",
+                "compiler.place-data-into-section": false,
                 "compiler.post-instruction-scheduling": "default",
                 "compiler.pre-instruction-scheduling": "default",
                 "compiler.scalar-model": "default",
@@ -86,7 +78,7 @@
                 "compiler++.enable-unroll-loops": false,
                 "compiler++.exceptions": true,
                 "compiler++.exclude-floating-point": false,
-                "compiler++.extra-include-directories": "src;src/config/default;PIC32MK1024_APP_CODE.X",
+                "compiler++.extra-include-directories": "src;src/config/default;PIC32MK0512_APP_CODE.X",
                 "compiler++.generate-16-bit-code": false,
                 "compiler++.generate-micro-compressed-code": false,
                 "compiler++.isolate-each-function": true,
@@ -103,8 +95,8 @@
                 "assembler.enable-symbols": true,
                 "assembler.exclude-floating-point-library": false,
                 "assembler.expand-macros": false,
-                "assembler.extra-include-directories-for-assembler": "PIC32MK1024_APP_CODE.X",
-                "assembler.extra-include-directories-for-preprocessor": "PIC32MK1024_APP_CODE.X",
+                "assembler.extra-include-directories-for-assembler": "PIC32MK0512_APP_CODE.X",
+                "assembler.extra-include-directories-for-preprocessor": "PIC32MK0512_APP_CODE.X",
                 "assembler.false-conditionals": false,
                 "assembler.generate-16-bit-code": false,
                 "assembler.generate-micro-compressed-code": false,
@@ -127,7 +119,7 @@
                 "linker.enable-default-isr": true,
                 "linker.exclude-floating-point-library": false,
                 "linker.exclude-standard-libraries": false,
-                "linker.extra-lib-directories": "PIC32MK1024_APP_CODE.X",
+                "linker.extra-lib-directories": "PIC32MK0512_APP_CODE.X",
                 "linker.fill-flash-options-how": "0",
                 "linker.fill-flash-options-inc-const": "1",
                 "linker.fill-flash-options-what": "0",
@@ -247,6 +239,7 @@
                 "UART4": true,
                 "UART5": true,
                 "UART6": true,
+                "communication.interface": "${communication.interface.default}",
                 "communication.interface.jtag": "2wire",
                 "communication.speed": "${communication.speed.default}",
                 "debugoptions.debug-startup": "Use system settings",
@@ -267,7 +260,8 @@
                 "memories.id": true,
                 "memories.instruction.ram.ranges": "${memories.instruction.ram.ranges}",
                 "memories.programmemory": true,
-                "memories.programmemory.ranges": "1d000000-1d0fffff",
+                "memories.programmemory.ranges": "1d000000-1d07ffff",
+                "programmerToGoFilePath": "D:/APT-PROJECTS/PIC32MK_BOOTLOADER/PIC32MK1024_APP_CODE/PIC32MK0512_APP_CODE.X/debug/default/PIC32MK0512_APP_CODE_ptg",
                 "programoptions.donoteraseauxmem": false,
                 "programoptions.eraseb4program": true,
                 "programoptions.pgmentry.voltage": "low",
@@ -275,7 +269,7 @@
                 "programoptions.preservedataflash": false,
                 "programoptions.preservedataflash.ranges": "${memories.dataflash.default}",
                 "programoptions.preserveeeprom": false,
-                "programoptions.preserveprogram.ranges": "1D0FF000-1D0FFFFF",
+                "programoptions.preserveprogram.ranges": "1D07F000-1D07FFFF",
                 "programoptions.preserveprogramrange": true,
                 "programoptions.preserveuserid": false,
                 "programoptions.programcalmem": false,
@@ -291,71 +285,30 @@
         {
             "name": "Project files",
             "files": [
+                "PIC32MK0512_APP_CODE.X/Makefile",
+                "src/config/default/APP_PIC32MK0512MCM064.ld",
+                "src/config/default/peripheral/canfd/*",
+                "src/config/default/peripheral/clk/*",
+                "src/config/default/peripheral/evic/*",
+                "src/config/default/peripheral/gpio/*",
+                "src/config/default/peripheral/nvm/*",
+                "src/config/default/peripheral/tmr/*",
+                "src/config/default/peripheral/uart/*",
+                "src/*",
+                "src/driver/*",
+                "src/middleware/*",
+                "src/software/*",
+                "src/config/default/stdio/*",
+                "PIC32MK0512_APP_CODE.X/PIC32MK1024_APP_CODE_default/**/*",
+                "src/config/default/*{.c,.h}",
                 {
-                    "include": "PIC32MK1024_APP_CODE.X/Makefile",
-                    "encoding": "ISO-8859-1"
-                },
-                {
-                    "include": "src/config/default/peripheral/canfd/*",
-                    "encoding": "ISO-8859-1"
-                },
-                {
-                    "include": "src/config/default/peripheral/clk/*",
-                    "encoding": "ISO-8859-1"
-                },
-                {
-                    "include": "src/config/default/peripheral/evic/*",
-                    "encoding": "ISO-8859-1"
-                },
-                {
-                    "include": "src/config/default/peripheral/gpio/*",
-                    "encoding": "ISO-8859-1"
-                },
-                {
-                    "include": "src/config/default/peripheral/nvm/*",
-                    "encoding": "ISO-8859-1"
-                },
-                {
-                    "include": "src/config/default/peripheral/tmr/*",
-                    "encoding": "ISO-8859-1"
-                },
-                {
-                    "include": "src/config/default/peripheral/uart/*",
-                    "encoding": "ISO-8859-1"
-                },
-                {
-                    "include": "src/driver/*",
-                    "encoding": "ISO-8859-1"
-                },
-                {
-                    "include": "src/middleware/*",
-                    "encoding": "ISO-8859-1"
-                },
-                {
-                    "include": "src/software/*",
-                    "encoding": "ISO-8859-1"
-                },
-                {
-                    "include": "src/config/default/stdio/*",
-                    "encoding": "ISO-8859-1"
-                },
-                {
-                    "include": "src/*",
-                    "encoding": "ISO-8859-1"
-                },
-                {
-                    "include": "PIC32MK1024_APP_CODE.X/PIC32MK1024_APP_CODE_default/**/*",
-                    "encoding": "ISO-8859-1"
-                },
-                {
-                    "include": "src/config/default/*{.c,.h,.ld}",
-                    "encoding": "ISO-8859-1"
-                },
-                "PIC32MK1024_APP_CODE.X/dist/default/debug/PIC32MK1024_APP_CODE.X.debug.elf",
-                "PIC32MK1024_APP_CODE.X/dist/default/production/PIC32MK1024_APP_CODE.X.production.elf",
-                "PIC32MK1024_APP_CODE.X/dist/default/production/PIC32MK1024_APP_CODE.X.production.hex",
-                "PIC32MK1024_APP_CODE.X/dist/default/production/PIC32MK1024_APP_CODE.X.production.unified.hex"
-            ]
+                    "include": ".vscode/PIC32MK0512_CAN_BOOTLOADER.mplab.json",
+                    "type": "project",
+                    "projectType": "loadable",
+                    "dependentConfigurationName": "default"
+                }
+            ],
+            "encoding": "ISO-8859-1"
         }
     ]
 }
