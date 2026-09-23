@@ -1,0 +1,95 @@
+configVersion: 1.0.0
+componentName: uart1
+coreVersion: 5.8.4
+device: PIC32MK0512MCM064
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: uart1
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.26.1
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: uart1
+          x: '264'
+          y: '185'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    BAUD_RATE:
+      attributes:
+        id: BAUD_RATE
+      children:
+      - children:
+        - attributes:
+            value: '9600'
+          type: User
+        type: Values
+      type: Integer
+    BRG_VALUE:
+      attributes:
+        id: BRG_VALUE
+      children:
+      - children:
+        - attributes:
+            id: uart1
+            value: '1562'
+          type: Dynamic
+        type: Values
+      type: Integer
+    UART_BRGH:
+      attributes:
+        id: UART_BRGH
+      children:
+      - children:
+        - attributes:
+            id: uart1
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    UART_INTERRUPT_MODE_ENABLE:
+      attributes:
+        id: UART_INTERRUPT_MODE_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: uart1
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    UART_OPERATING_MODE:
+      attributes:
+        id: UART_OPERATING_MODE
+      children:
+      - children:
+        - attributes:
+            value: '0'
+          type: User
+        type: Values
+      type: KeyValueSet
+    UART_RING_BUFFER_MODE_ENABLE:
+      attributes:
+        id: UART_RING_BUFFER_MODE_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: uart1
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+  userData: {}

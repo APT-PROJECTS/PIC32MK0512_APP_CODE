@@ -102,6 +102,16 @@
 #define RED_LED_GetLatch()          ((LATC >> 12) & 0x1U)
 #define RED_LED_PIN                  GPIO_PIN_RC12
 
+/*** Macros for UART1_RX pin ***/
+#define UART1_RX_Get()               ((PORTC >> 6) & 0x1U)
+#define UART1_RX_GetLatch()          ((LATC >> 6) & 0x1U)
+#define UART1_RX_PIN                  GPIO_PIN_RC6
+
+/*** Macros for UART1_TX pin ***/
+#define UART1_TX_Get()               ((PORTC >> 7) & 0x1U)
+#define UART1_TX_GetLatch()          ((LATC >> 7) & 0x1U)
+#define UART1_TX_PIN                  GPIO_PIN_RC7
+
 
 // *****************************************************************************
 /* GPIO Port

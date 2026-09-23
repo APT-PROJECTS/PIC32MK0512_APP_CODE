@@ -52,7 +52,7 @@
 #include "device.h"
 #include "plib_tmr2.h"
 #include "interrupts.h"
-#include "../../software/state_engine.h"
+#include "software.h"
 
 static volatile TMR_TIMER_OBJECT tmr2Obj;
 
@@ -120,7 +120,7 @@ void __attribute__((used)) TIMER_2_InterruptHandler (void)
     uint32_t status = IFS0bits.T2IF;
     IFS0CLR = _IFS0_T2IF_MASK;
     STATE_ENGINE_Tasks();
-    
+
     if((tmr2Obj.callback_fn != NULL))
     {
         uintptr_t context = tmr2Obj.context;

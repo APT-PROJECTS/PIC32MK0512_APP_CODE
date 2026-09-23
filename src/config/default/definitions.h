@@ -49,8 +49,8 @@
 #include <stddef.h>
 #include <stdbool.h>
 #include "peripheral/uart/plib_uart1.h"
-#include "peripheral/tmr/plib_tmr2.h"
 #include "peripheral/canfd/plib_canfd1.h"
+#include "peripheral/tmr/plib_tmr2.h"
 #include "peripheral/clk/plib_clk.h"
 #include "peripheral/gpio/plib_gpio.h"
 #include "peripheral/evic/plib_evic.h"
@@ -65,7 +65,7 @@ extern "C" {
 // DOM-IGNORE-END
 
 /* Device Information */
-#define DEVICE_NAME          "PIC32MK1024MCM064"
+#define DEVICE_NAME          "PIC32MK0512MCM064"
 #define DEVICE_ARCH          "MIPS"
 #define DEVICE_FAMILY        "PIC32MK1519"
 #define DEVICE_SERIES        "PIC32MK"

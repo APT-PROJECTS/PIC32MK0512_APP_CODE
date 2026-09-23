@@ -5,15 +5,18 @@
 #include <stdio.h>
 #include "definitions.h"
 #include "middleware.h"
+#include "software.h"
 
 int main(void) {
     SYS_Initialize(NULL);
+    
+    GREEN_LED_Set();
 
     EEPROM_Initialize();
 
     TMR2_Start();
 
     while (1) {
-        GREEN_LED_Set();
+//        STATE_ENGINE_Tasks();
     }
 }

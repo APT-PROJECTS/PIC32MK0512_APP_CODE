@@ -1,0 +1,84 @@
+configVersion: 1.0.0
+componentName: can1
+coreVersion: 5.8.4
+device: PIC32MK0512MCM064
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: can1
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.26.1
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: can1
+          x: '99'
+          y: '186'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    CAN1_FIFO1_SIZE:
+      attributes:
+        id: CAN1_FIFO1_SIZE
+      children:
+      - children:
+        - attributes:
+            value: '16'
+          type: User
+        type: Values
+      type: Integer
+    CAN1_FIFO2_SIZE:
+      attributes:
+        id: CAN1_FIFO2_SIZE
+      children:
+      - children:
+        - attributes:
+            value: '16'
+          type: User
+        type: Values
+      type: Integer
+    FIFO_OFFSET:
+      attributes:
+        id: FIFO_OFFSET
+      children:
+      - children:
+        - attributes:
+            id: can1
+            value: '0xc'
+          type: Dynamic
+        type: Values
+      type: String
+    FILTER_OBJ_MASK_OFFSET:
+      attributes:
+        id: FILTER_OBJ_MASK_OFFSET
+      children:
+      - children:
+        - attributes:
+            id: can1
+            value: '0x8'
+          type: Dynamic
+        type: Values
+      type: String
+    FILTER_OFFSET:
+      attributes:
+        id: FILTER_OFFSET
+      children:
+      - children:
+        - attributes:
+            id: can1
+            value: '0x4'
+          type: Dynamic
+        type: Values
+      type: String
+  userData: {}

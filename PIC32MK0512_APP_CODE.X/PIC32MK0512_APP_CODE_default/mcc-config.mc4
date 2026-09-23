@@ -1,0 +1,68 @@
+configVersion: 1.0.0
+coreVersion: 5.8.4
+spaHostVersion: 1.2.1
+device: PIC32MK0512MCM064
+deviceLibrary: {}
+groupModules: []
+modules:
+- can1
+- core
+- dfp
+- nvm
+- tmr2
+- uart1
+generatedFileHashHistoryMap:
+- file: ..\src\config\default\definitions.h
+  hash: d8accbd7a90890f26e37c78526ed19d235c59edde87f53bb05a13888b7689005
+- file: ..\src\config\default\device.h
+  hash: 4d4341a6f9628cea0bf73f980b639f7cb81089e55a60ad7e434be2a71e477442
+- file: ..\src\config\default\exceptions.c
+  hash: df6a7db71f29db985de306abd7b848a24111cef6398ccfb9479449ae4fbc069d
+- file: ..\src\config\default\initialization.c
+  hash: 38cd837980f00f32430e188abab8d54d70a3f08fc307a8a693990f9a29b8d2b2
+- file: ..\src\config\default\interrupts.c
+  hash: 9d43860b28776dfb224808f98483fc485c5c43647b67e2dcadef35259c12af1f
+- file: ..\src\config\default\interrupts.h
+  hash: 4665dfa5b71cc8cdd834b96fae3990b973b3bbe383c91299bba422ad9262c887
+- file: ..\src\config\default\p32MK0512MCM064.ld
+  hash: f1182f2c614fa3bfdf69ad9561c7e79ecc4b7429b43c1091eb96bd5e4d91ceb0
+- file: ..\src\config\default\peripheral\canfd\plib_canfd1.c
+  hash: 7516a5733e9805ecd2009b0d440dac9fc57640ed30531221c567bcc872ae4d46
+- file: ..\src\config\default\peripheral\canfd\plib_canfd1.h
+  hash: 022d46ca04683c15b1a6cdb86baa08f7aaab73705570f3207e8293f6a930dc53
+- file: ..\src\config\default\peripheral\canfd\plib_canfd_common.h
+  hash: fbf5091541d361f023f2c1fa3f04173ed84db75e64f475d14e1919856f1bf620
+- file: ..\src\config\default\peripheral\clk\plib_clk.c
+  hash: 43c0ac09b9b0a6111b70cc5ab597b57c60e4e9ae13be0203d4806c211d53afab
+- file: ..\src\config\default\peripheral\clk\plib_clk.h
+  hash: 35384f2e13e59b7190bf77f6996baf3ea2377ec42df94979a6f793326def5255
+- file: ..\src\config\default\peripheral\evic\plib_evic.c
+  hash: 423b1fdfa3b9e9c0c8b5108a038f68c540c731ca4294d78687ffc8f944572837
+- file: ..\src\config\default\peripheral\evic\plib_evic.h
+  hash: 7cde519104fabf0879c9f5a1dea51a19269bb885019ff82717bddd207750f2de
+- file: ..\src\config\default\peripheral\gpio\plib_gpio.c
+  hash: 6dd8af03a1d3fa8d20e117ea50d9d7fc23dfb6b71bca8e05b3e21cd8f6a9729d
+- file: ..\src\config\default\peripheral\gpio\plib_gpio.h
+  hash: 60dc41a3f3a082aa5d970b433910ac853d289b1dd4e5aa9bd308d5425be39ac9
+- file: ..\src\config\default\peripheral\nvm\plib_nvm.c
+  hash: 56cca612761d5ea55913b0371224ed5d6668d172b5f52ab8254c202dc45d5fc3
+- file: ..\src\config\default\peripheral\nvm\plib_nvm.h
+  hash: 72e0803b25173902f4639c459a453e3a4fcbe969ac7b3c5307ecd39c204af1fa
+- file: ..\src\config\default\peripheral\tmr\plib_tmr2.c
+  hash: 4576252727d2b3cc2a3aa384a4c3b596f6396d6d1ffc7c5138b6783f0fb1612e
+- file: ..\src\config\default\peripheral\tmr\plib_tmr2.h
+  hash: 8499dc0cb6f4e7589e3df11e36118692f524f7ac156a597db7b25e63438bfd20
+- file: ..\src\config\default\peripheral\tmr\plib_tmr_common.h
+  hash: fe0f7e886eba99992a90f718b6aa9f2b438b8204094495f72a0d1e83418d3187
+- file: ..\src\config\default\peripheral\uart\plib_uart1.c
+  hash: 73091868d5b558ca644076c7989957f9c86bc95aacb54a12c4ab6f1cd36c3d3a
+- file: ..\src\config\default\peripheral\uart\plib_uart1.h
+  hash: 7a1eb131a20e49ee5e46ba34845ec01b77fdcea9750992bbebccd3dec805b35a
+- file: ..\src\config\default\peripheral\uart\plib_uart_common.h
+  hash: 70213cd740b3ff9a591d93ad6aac9493335851db084dd862275effacdebf710d
+- file: ..\src\config\default\stdio\xc32_monitor.c
+  hash: 858f8710d4287200a5ee7f3b3ad7c24f505aed9c05c16956ab0ff9f7bb162a6a
+- file: ..\src\config\default\toolchain_specifics.h
+  hash: f6f3282ecb4ad8b5ba3487b7d7b8f6cfa3f977240726af07eaab058caf904381
+- file: ..\src\main.c
+  hash: d3c233d419e6304bfacbafc18cc68c0f5c26e365f23b20ea40ccfac458f664c5

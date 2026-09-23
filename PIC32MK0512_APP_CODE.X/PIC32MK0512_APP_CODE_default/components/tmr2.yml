@@ -1,0 +1,81 @@
+configVersion: 1.0.0
+componentName: tmr2
+coreVersion: 5.8.4
+device: PIC32MK0512MCM064
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: tmr2
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.26.1
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: tmr2
+          x: '100'
+          y: '98'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    TIMER_PERIOD:
+      attributes:
+        id: TIMER_PERIOD
+      children:
+      - children:
+        - attributes:
+            id: tmr2
+            value: '11159'
+          type: Dynamic
+        type: Values
+      type: Long
+    TIMER_TIME_PERIOD_MS:
+      attributes:
+        id: TIMER_TIME_PERIOD_MS
+      children:
+      - children:
+        - attributes:
+            id: max
+          children:
+          - type: Value
+            value: '1092.2833'
+          type: Float
+        type: Attributes
+      - children:
+        - attributes:
+            value: '186.0'
+          type: User
+        type: Values
+      type: Float
+    TIMER_UNIT:
+      attributes:
+        id: TIMER_UNIT
+      children:
+      - children:
+        - attributes:
+            value: microsecond
+          type: User
+        type: Values
+      type: Combo
+    TIMER_WIDTH:
+      attributes:
+        id: TIMER_WIDTH
+      children:
+      - children:
+        - attributes:
+            id: tmr2
+            value: '16'
+          type: Dynamic
+        type: Values
+      type: Integer
+  userData: {}
