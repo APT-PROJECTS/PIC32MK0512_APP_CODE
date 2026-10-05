@@ -8,25 +8,11 @@ extern "C" {
     
 #include "driver.h"
     
-extern uint32_t devsn[4];
-extern uint32_t devid;
-    
 //--------------------------------------------------
 // MATRIX SIZE
 //--------------------------------------------------
 #define ROWS    16
 #define COLS    5
-
-//--------------------------------------------------
-// EEPROM BUFFER
-//--------------------------------------------------
-extern uint8_t eepromBuffer[EEPROM_DATA_SIZE];
-
-//--------------------------------------------------
-// EXTERNAL MATRIX
-//--------------------------------------------------
-extern float readMatrix[ROWS][COLS];
-extern float writeMatrix[ROWS][COLS];
 
 //==================================================
 // ROW 0
@@ -43,9 +29,23 @@ extern float writeMatrix[ROWS][COLS];
 #define W_BOOT_VERSION               writeMatrix[0][3]
 #define W_APP_SIZE                   writeMatrix[0][4]
 
+extern uint32_t devsn[4];
+extern uint32_t devid;
+    
+//--------------------------------------------------
+// EEPROM BUFFER
+//--------------------------------------------------
+extern uint8_t eepromBuffer[EEPROM_DATA_SIZE];
+
+//--------------------------------------------------
+// EXTERNAL MATRIX
+//--------------------------------------------------
+extern float readMatrix[ROWS][COLS];
+extern float writeMatrix[ROWS][COLS];
+
     
 void Get_PIC_ID(void);
-void EEPROM_Initialize(void);
+void NVM_Memory_Initialize(void);
 void Load_Matrix(void);
 
 

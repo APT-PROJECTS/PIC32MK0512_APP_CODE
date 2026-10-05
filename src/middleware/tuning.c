@@ -32,8 +32,6 @@ static uint8_t read_tuning_data[20] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 static uint8_t send_tuning_data[20] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
-static int MCU_ID = 0;
-
 void Tuner_Init(void) {
     received_rows_mask = 0;
     all_rows_received = false;
@@ -205,22 +203,22 @@ void Update_Config(void) {
     CONFIG_NA1 = R_FF0C_04;
 
     // Row 13
-    CONFIG_IPH_MAX = R_FF0D_01;
-    CONFIG_FMOTOR_MAX = R_FF0D_02;
-    CONFIG_MOTOR_TMAX = R_FF0D_03;
-    CONFIG_MCU_TMAX = R_FF0D_04;
+    R_FF0D_01 = CONFIG_IPH_MAX;
+    R_FF0D_02 = CONFIG_FMOTOR_MAX;
+    R_FF0D_03 = CONFIG_MOTOR_TMAX;
+    R_FF0D_04 = CONFIG_MCU_TMAX;
 
     // Row 14
-    CONFIG_VMAX = R_FF0E_01;
-    CONFIG_VMIN = R_FF0E_02;
-    CONFIG_IDC_MAX = R_FF0E_03;
-    CONFIG_NA2 = R_FF0E_04;
+    R_FF0E_01 = CONFIG_VMAX;
+    R_FF0E_02 = CONFIG_VMIN;
+    R_FF0E_03 = CONFIG_IDC_MAX;
+    R_FF0E_04 = CONFIG_NA2;
 
     // Row 15
-    CONFIG_RPM_KP_MIN = R_FF0F_01;
-    CONFIG_RPM_KP_MAX = R_FF0F_02;
-    CONFIG_RPM_KI_MIN = R_FF0F_03;
-    CONFIG_RPM_KI_MAX = R_FF0F_04;
+    R_FF0F_01 = CONFIG_RPM_KP_MIN;
+    R_FF0F_02 = CONFIG_RPM_KP_MAX;
+    R_FF0F_03 = CONFIG_RPM_KI_MIN;
+    R_FF0F_04 = CONFIG_RPM_KI_MAX;
 }
 
 /*=====================================================================

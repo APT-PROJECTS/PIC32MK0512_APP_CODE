@@ -9,14 +9,14 @@
 
 int main(void) {
     SYS_Initialize(NULL);
-    
+
     GREEN_LED_Set();
 
-    EEPROM_Initialize();
+    NVM_Memory_Initialize();
 
     TMR2_Start();
 
     while (1) {
-//        STATE_ENGINE_Tasks();
+
     }
 }

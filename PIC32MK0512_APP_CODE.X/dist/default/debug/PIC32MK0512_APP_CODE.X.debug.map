@@ -3,17 +3,17 @@ Optional file vector_offset_init.o not found
 Archive member included to satisfy reference by file (symbol)
 
 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-reset.o)
-                              C:\Users\HP\AppData\Local\Temp\ccgWbIT3.o (_on_reset)
+                              C:\Users\HP\AppData\Local\Temp\cc2PrEvu.o (_on_reset)
 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-bootstrap.o)
-                              C:\Users\HP\AppData\Local\Temp\ccgWbIT3.o (_on_bootstrap)
+                              C:\Users\HP\AppData\Local\Temp\cc2PrEvu.o (_on_bootstrap)
 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-nmi-handler.o)
-                              C:\Users\HP\AppData\Local\Temp\ccgWbIT3.o (_nmi_handler)
+                              C:\Users\HP\AppData\Local\Temp\cc2PrEvu.o (_nmi_handler)
 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(pic32_data_init_core.o)
-                              C:\Users\HP\AppData\Local\Temp\ccgWbIT3.o (__pic32_data_init)
+                              C:\Users\HP\AppData\Local\Temp\cc2PrEvu.o (__pic32_data_init)
 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(general-exception.o)
-                              C:\Users\HP\AppData\Local\Temp\ccgWbIT3.o (_general_exception_context)
+                              C:\Users\HP\AppData\Local\Temp\cc2PrEvu.o (_general_exception_context)
 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(defaultinterrupt.o)
-                              C:\Users\HP\AppData\Local\Temp\ccMnMnKa.o (_DefaultInterrupt)
+                              C:\Users\HP\AppData\Local\Temp\cc6IKGP6.o (_DefaultInterrupt)
 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcmp.o)
                               build/default/debug/_ext/1375476428/boot_handler.o (memcmp)
 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcpy.o)
@@ -52,82 +52,83 @@ section                    address  length [bytes]      (dec)  Description
 .text.TIMER_2_Handler   0x9d0048dc          0x1d0         464   
 .text.FLASH_CONTROL_Han 0x9d004aac          0x1d0         464   
 .text.FLASH_EEPROM_Writ 0x9d004c7c          0x188         392   
-.text.Boot_APP_CRC_Hand 0x9d004e04          0x144         324   
-.text.Boot_App_Chunk_Ha 0x9d004f48          0x128         296   
-.text.Load_Matrix       0x9d005070          0x11c         284   
-.text.Run_Boot_Handler  0x9d00518c          0x110         272   
-.text.Boot_App_Erase_Ha 0x9d00529c          0x10c         268   
-.text.CAN1_MessageRecei 0x9d0053a8          0x108         264   
-.text.CAN1_Initialize   0x9d0054b0          0x104         260   
-.text.page_is_valid     0x9d0055b4           0xf0         240   
-.text.Boot_PIC_ID_Handl 0x9d0056a4           0xe8         232   
-.text.STATE_ENGINE_Task 0x9d00578c           0xe8         232   
-.text.general_exception 0x9d005874           0xdc         220   
-.text.CAN_Tuner_Send_Ze 0x9d005950           0xd8         216   
-.text.GPIO_Initialize   0x9d005a28           0xb4         180   
-.text.CLK_Initialize    0x9d005adc           0xb0         176   
-.text.CAN_Tuner_Handler 0x9d005b8c           0xb0         176   
-.text.CANbus_read       0x9d005c3c           0xa4         164   
-.text.UART_Tuner_Comman 0x9d005ce0           0x98         152   
-.text.state_init        0x9d005d78           0x98         152   
-.text.Boot_Status_Handl 0x9d005e10           0x90         144   
-.text.SYS_Initialize    0x9d005ea0           0x8c         140   
-.text.CAN_Tuner_Write_F 0x9d005f2c           0x8c         140   
-.text.NVM_StartOperatio 0x9d005fb8           0x80         128   
-.text                   0x9d006038           0x7c         124  App's exec code 
-.text.C0_send_TU_data_C 0x9d0060b4           0x74         116   
-.text.UART_Tuner_Send_P 0x9d006128           0x74         116   
-.text.CAN_Tuner_Send_PI 0x9d00619c           0x6c         108   
-.text.CAN_Tuner_Send_PI 0x9d006208           0x6c         108   
-.text.calculate_crc     0x9d006274           0x60          96   
-.text.TIMER_2_Interrupt 0x9d0062d4           0x58          88   
-.text.main_entry        0x9d00632c           0x54          84   
-.text.EVIC_Initialize   0x9d006380           0x50          80   
-.text.Boot_Stay_In_Boot 0x9d0063d0           0x50          80   
-.text.Boot_App_Jump     0x9d006420           0x4c          76   
-.text.Get_PIC_ID        0x9d00646c           0x4c          76   
-.text.CAN_Send_Status   0x9d0064b8           0x4c          76   
-.text                   0x9d006504           0x44          68  App's exec code 
-.text.send_byte_uart    0x9d006548           0x40          64   
-.text.Boot_App_Chunk_Ac 0x9d006588           0x40          64   
-.text.NVM_InterruptHand 0x9d0065c8           0x3c          60   
-.text.TMR2_Initialize   0x9d006604           0x3c          60   
-.text.UART1_Initialize  0x9d006640           0x38          56   
-.text.memcmp            0x9d006678           0x38          56   
-.text.NVM_RowWrite      0x9d0066b0           0x34          52   
-.text.UART_Tuner_Send_Z 0x9d0066e4           0x34          52   
-.text.main              0x9d006718           0x34          52   
-.text.NVM_WordWrite     0x9d00674c           0x30          48   
-.text.CANbus_write      0x9d00677c           0x30          48   
-.text.flash_wait_comple 0x9d0067ac           0x30          48   
-.text.NVM_Read          0x9d0067dc           0x2c          44   
-.text.memcpy            0x9d006808           0x2c          44   
-.text.NVM_WriteUnlockSe 0x9d006834           0x28          40   
-.text.drive_init        0x9d00685c           0x28          40   
-.text.memset            0x9d006884           0x28          40   
-.text.NVM_Initialize    0x9d0068ac           0x24          36   
-.text.EEPROM_Initialize 0x9d0068d0           0x24          36   
-.text.send_diag_data    0x9d0068f4           0x24          36   
-.text                   0x9d006918           0x20          32  App's exec code 
-.text._general_exceptio 0x9d006938           0x1c          28   
-.text._bootstrap_except 0x9d006954           0x1c          28   
-.MIPS.abiflags          0x9d006970           0x18          24   
-.rodata.cst4            0x9d006988           0x18          24   
-.text                   0x9d0069a0           0x30          48  App's exec code 
-.text.TMR2_Start        0x9d0069d0           0x14          20   
-.text.FLASH_EEPROM_Init 0x9d0069e4           0x14          20   
-.text.Boot_Is_App_Prese 0x9d0069f8           0x14          20   
-.rodata                 0x9d006a0c           0x14          20  Read-only const 
-.rodata.dlcToLength     0x9d006a20           0x10          16   
-.text.NVM_ErrorGet      0x9d006a30           0x10          16   
-.text.NVM_IsBusy        0x9d006a40           0x10          16   
-.bev_handler            0x9d006a50           0x10          16   
-.text.send_data_uart    0x9d006a60            0xc          12   
-.text.__exception_handl 0x9d006a6c            0xc          12   
-.text.Tuner_Init        0x9d006a78            0x8           8   
-.text._on_reset         0x9d006a80            0x8           8   
-.text._on_bootstrap     0x9d006a88            0x8           8   
-      Total kseg0_program_mem used  :      0x5a90       23184  4.5% of 0x7f000
+.text.Boot_App_Chunk_Ha 0x9d004e04          0x128         296   
+.text.Load_Matrix       0x9d004f2c          0x11c         284   
+.text.Run_Boot_Handler  0x9d005048          0x110         272   
+.text.Boot_App_Erase_Ha 0x9d005158          0x10c         268   
+.text.CAN1_MessageRecei 0x9d005264          0x108         264   
+.text.CAN1_Initialize   0x9d00536c          0x104         260   
+.text.Boot_APP_CRC_Hand 0x9d005470           0xf8         248   
+.text.page_is_valid     0x9d005568           0xf0         240   
+.text.Boot_PIC_ID_Handl 0x9d005658           0xe8         232   
+.text.STATE_ENGINE_Task 0x9d005740           0xe8         232   
+.text.general_exception 0x9d005828           0xdc         220   
+.text.CAN_Tuner_Send_Ze 0x9d005904           0xd8         216   
+.text.GPIO_Initialize   0x9d0059dc           0xb4         180   
+.text.CLK_Initialize    0x9d005a90           0xb0         176   
+.text.CAN_Tuner_Handler 0x9d005b40           0xb0         176   
+.text.CANbus_read       0x9d005bf0           0xa4         164   
+.text.UART_Tuner_Comman 0x9d005c94           0x98         152   
+.text.state_init        0x9d005d2c           0x98         152   
+.text.Boot_Status_Handl 0x9d005dc4           0x90         144   
+.text.SYS_Initialize    0x9d005e54           0x8c         140   
+.text.CAN_Tuner_Write_F 0x9d005ee0           0x8c         140   
+.text.NVM_StartOperatio 0x9d005f6c           0x80         128   
+.text                   0x9d005fec           0x7c         124  App's exec code 
+.text.C0_send_TU_data_C 0x9d006068           0x74         116   
+.text.UART_Tuner_Send_P 0x9d0060dc           0x74         116   
+.text.CAN_Tuner_Send_PI 0x9d006150           0x6c         108   
+.text.CAN_Tuner_Send_PI 0x9d0061bc           0x6c         108   
+.text.calculate_crc     0x9d006228           0x60          96   
+.text.Boot_APP_CRC32_So 0x9d006288           0x5c          92   
+.text.TIMER_2_Interrupt 0x9d0062e4           0x58          88   
+.text.main_entry        0x9d00633c           0x54          84   
+.text.EVIC_Initialize   0x9d006390           0x50          80   
+.text.Boot_Stay_In_Boot 0x9d0063e0           0x50          80   
+.text.Boot_App_Jump     0x9d006430           0x4c          76   
+.text.Get_PIC_ID        0x9d00647c           0x4c          76   
+.text.CAN_Send_Status   0x9d0064c8           0x4c          76   
+.text                   0x9d006514           0x44          68  App's exec code 
+.text.send_byte_uart    0x9d006558           0x40          64   
+.text.Boot_App_Chunk_Ac 0x9d006598           0x40          64   
+.text.NVM_InterruptHand 0x9d0065d8           0x3c          60   
+.text.TMR2_Initialize   0x9d006614           0x3c          60   
+.text.UART1_Initialize  0x9d006650           0x38          56   
+.text.memcmp            0x9d006688           0x38          56   
+.text.NVM_RowWrite      0x9d0066c0           0x34          52   
+.text.UART_Tuner_Send_Z 0x9d0066f4           0x34          52   
+.text.main              0x9d006728           0x34          52   
+.text.NVM_WordWrite     0x9d00675c           0x30          48   
+.text.CANbus_write      0x9d00678c           0x30          48   
+.text.flash_wait_comple 0x9d0067bc           0x30          48   
+.text.NVM_Read          0x9d0067ec           0x2c          44   
+.text.memcpy            0x9d006818           0x2c          44   
+.text.NVM_WriteUnlockSe 0x9d006844           0x28          40   
+.text.drive_init        0x9d00686c           0x28          40   
+.text.memset            0x9d006894           0x28          40   
+.text.NVM_Initialize    0x9d0068bc           0x24          36   
+.text.NVM_Memory_Initia 0x9d0068e0           0x24          36   
+.text.send_diag_data    0x9d006904           0x24          36   
+.text                   0x9d006928           0x20          32  App's exec code 
+.text._general_exceptio 0x9d006948           0x1c          28   
+.text._bootstrap_except 0x9d006964           0x1c          28   
+.MIPS.abiflags          0x9d006980           0x18          24   
+.rodata.cst4            0x9d006998           0x18          24   
+.text                   0x9d0069b0           0x30          48  App's exec code 
+.text.TMR2_Start        0x9d0069e0           0x14          20   
+.text.FLASH_EEPROM_Init 0x9d0069f4           0x14          20   
+.text.Boot_Is_App_Prese 0x9d006a08           0x14          20   
+.rodata                 0x9d006a1c           0x14          20  Read-only const 
+.rodata.dlcToLength     0x9d006a30           0x10          16   
+.text.NVM_ErrorGet      0x9d006a40           0x10          16   
+.text.NVM_IsBusy        0x9d006a50           0x10          16   
+.bev_handler            0x9d006a60           0x10          16   
+.text.send_data_uart    0x9d006a70            0xc          12   
+.text.__exception_handl 0x9d006a7c            0xc          12   
+.text.Tuner_Init        0x9d006a88            0x8           8   
+.text._on_reset         0x9d006a90            0x8           8   
+.text._on_bootstrap     0x9d006a98            0x8           8   
+      Total kseg0_program_mem used  :      0x5aa0       23200  4.5% of 0x7f000
 
 kseg1 Boot-Memory Usage
 section                    address  length [bytes]      (dec)  Description
@@ -135,7 +136,7 @@ section                    address  length [bytes]      (dec)  Description
 .reset                  0xbd000000          0x178         376  Reset handler 
          Total kseg1_boot_mem used  :       0x178         376  32.6% of 0x480
         --------------------------------------------------------------------------
-         Total Program Memory used  :      0x5c08       23560  4.5% of 0x7f480
+         Total Program Memory used  :      0x5c18       23576  4.5% of 0x7f480
         --------------------------------------------------------------------------
 
 
@@ -182,15 +183,15 @@ Microchip PIC32 Memory-Usage Report By Module
         text        data         bss         dec         hex    basename                   filename
 --------------------------------------------------------------------------------
        10412          18          60       10490        28fa    tuning.o               build/default/debug/_ext/1375476428/tuning.o
-        3924           5        1557        5486        156e    boot_handler.o         build/default/debug/_ext/1375476428/boot_handler.o
+        3940           5        1557        5502        157e    boot_handler.o         build/default/debug/_ext/1375476428/boot_handler.o
          396           0        4736        5132        140c    device_startup.o       build/default/debug/_ext/1375476428/device_startup.o
          908           4        4076        4988        137c    flash_eeprom.o         build/default/debug/_ext/362756510/flash_eeprom.o
         1088           0        2388        3476         d94    plib_canfd1.o          build/default/debug/_ext/1984168316/plib_canfd1.o
         1744           0           0        1744         6d0    data_init              data_init
          944           0           0         944         3b0    interrupts.o           build/default/debug/_ext/1171490990/interrupts.o
-           0         920           0         920         398    ccosfpNB.o             C:\Users\HP\AppData\Local\Temp\ccosfpNB.o
+           0         920           0         920         398    ccZZpL3K.o             C:\Users\HP\AppData\Local\Temp\ccZZpL3K.o
          732           0          36         768         300    driver_UART.o          build/default/debug/_ext/362756510/driver_UART.o
-         492           0           0         492         1ec    ccgWbIT3.o             C:\Users\HP\AppData\Local\Temp\ccgWbIT3.o
+         492           0           0         492         1ec    cc2PrEvu.o             C:\Users\HP\AppData\Local\Temp\cc2PrEvu.o
          472           0           8         480         1e0    plib_nvm.o             build/default/debug/_ext/60176403/plib_nvm.o
          424           8          16         448         1c0    state_engine.o         build/default/debug/_ext/1200941409/state_engine.o
            0         200          36         236          ec    mcu_config.o           build/default/debug/_ext/1375476428/mcu_config.o
@@ -220,7 +221,7 @@ Microchip PIC32 Memory-Usage Report By Module
         1760           0           0        1760         6e0    misc                   misc
            0           0           0           6           6    padding                padding
 --------------------------------------------------------------------------------
-       25320        1181       12969       39476        9a34    dist/default/debug/PIC32MK0512_APP_CODE.X.debug.elf
+       25336        1181       12969       39492        9a44    dist/default/debug/PIC32MK0512_APP_CODE.X.debug.elf
 
 
 Discarded input sections
@@ -480,7 +481,9 @@ Discarded input sections
  .reginfo       0x00000000       0x18 build/default/debug/_ext/1375476428/boot_handler.o
  .MIPS.abiflags
                 0x00000000       0x18 build/default/debug/_ext/1375476428/boot_handler.o
- .pdr           0x00000000      0x1e0 build/default/debug/_ext/1375476428/boot_handler.o
+ .pdr           0x00000000      0x220 build/default/debug/_ext/1375476428/boot_handler.o
+ .text.Next_Chunk_Index
+                0x00000000       0x1c build/default/debug/_ext/1375476428/boot_handler.o
  .text.Boot_Stay_In_Boot_Requested
                 0x00000000        0xc build/default/debug/_ext/1375476428/boot_handler.o
  .text          0x00000000        0x0 build/default/debug/_ext/1375476428/device_startup.o
@@ -531,35 +534,35 @@ Discarded input sections
  .MIPS.abiflags
                 0x00000000       0x18 build/default/debug/_ext/1360937237/main.o
  .pdr           0x00000000       0x20 build/default/debug/_ext/1360937237/main.o
- .text          0x00000000        0x0 C:\Users\HP\AppData\Local\Temp\ccgWbIT3.o
- .data          0x00000000        0x0 C:\Users\HP\AppData\Local\Temp\ccgWbIT3.o
- .bss           0x00000000        0x0 C:\Users\HP\AppData\Local\Temp\ccgWbIT3.o
- .reginfo       0x00000000       0x18 C:\Users\HP\AppData\Local\Temp\ccgWbIT3.o
+ .text          0x00000000        0x0 C:\Users\HP\AppData\Local\Temp\cc2PrEvu.o
+ .data          0x00000000        0x0 C:\Users\HP\AppData\Local\Temp\cc2PrEvu.o
+ .bss           0x00000000        0x0 C:\Users\HP\AppData\Local\Temp\cc2PrEvu.o
+ .reginfo       0x00000000       0x18 C:\Users\HP\AppData\Local\Temp\cc2PrEvu.o
  .MIPS.abiflags
-                0x00000000       0x18 C:\Users\HP\AppData\Local\Temp\ccgWbIT3.o
- .pdr           0x00000000       0xa0 C:\Users\HP\AppData\Local\Temp\ccgWbIT3.o
- .text          0x00000000        0x0 C:\Users\HP\AppData\Local\Temp\ccWyic6e.o
- .data          0x00000000        0x0 C:\Users\HP\AppData\Local\Temp\ccWyic6e.o
- .bss           0x00000000        0x0 C:\Users\HP\AppData\Local\Temp\ccWyic6e.o
- .reginfo       0x00000000       0x18 C:\Users\HP\AppData\Local\Temp\ccWyic6e.o
+                0x00000000       0x18 C:\Users\HP\AppData\Local\Temp\cc2PrEvu.o
+ .pdr           0x00000000       0xa0 C:\Users\HP\AppData\Local\Temp\cc2PrEvu.o
+ .text          0x00000000        0x0 C:\Users\HP\AppData\Local\Temp\ccotprlA.o
+ .data          0x00000000        0x0 C:\Users\HP\AppData\Local\Temp\ccotprlA.o
+ .bss           0x00000000        0x0 C:\Users\HP\AppData\Local\Temp\ccotprlA.o
+ .reginfo       0x00000000       0x18 C:\Users\HP\AppData\Local\Temp\ccotprlA.o
  .MIPS.abiflags
-                0x00000000       0x18 C:\Users\HP\AppData\Local\Temp\ccWyic6e.o
- .pdr           0x00000000        0x0 C:\Users\HP\AppData\Local\Temp\ccWyic6e.o
- .text          0x00000000        0x0 C:\Users\HP\AppData\Local\Temp\ccosfpNB.o
- .data          0x00000000        0x0 C:\Users\HP\AppData\Local\Temp\ccosfpNB.o
- .bss           0x00000000        0x0 C:\Users\HP\AppData\Local\Temp\ccosfpNB.o
- .reginfo       0x00000000       0x18 C:\Users\HP\AppData\Local\Temp\ccosfpNB.o
+                0x00000000       0x18 C:\Users\HP\AppData\Local\Temp\ccotprlA.o
+ .pdr           0x00000000        0x0 C:\Users\HP\AppData\Local\Temp\ccotprlA.o
+ .text          0x00000000        0x0 C:\Users\HP\AppData\Local\Temp\ccZZpL3K.o
+ .data          0x00000000        0x0 C:\Users\HP\AppData\Local\Temp\ccZZpL3K.o
+ .bss           0x00000000        0x0 C:\Users\HP\AppData\Local\Temp\ccZZpL3K.o
+ .reginfo       0x00000000       0x18 C:\Users\HP\AppData\Local\Temp\ccZZpL3K.o
  .MIPS.abiflags
-                0x00000000       0x18 C:\Users\HP\AppData\Local\Temp\ccosfpNB.o
- .pdr           0x00000000        0x0 C:\Users\HP\AppData\Local\Temp\ccosfpNB.o
- .text          0x00000000        0x0 C:\Users\HP\AppData\Local\Temp\ccMnMnKa.o
- .data          0x00000000        0x0 C:\Users\HP\AppData\Local\Temp\ccMnMnKa.o
- .bss           0x00000000        0x0 C:\Users\HP\AppData\Local\Temp\ccMnMnKa.o
- .reginfo       0x00000000       0x18 C:\Users\HP\AppData\Local\Temp\ccMnMnKa.o
+                0x00000000       0x18 C:\Users\HP\AppData\Local\Temp\ccZZpL3K.o
+ .pdr           0x00000000        0x0 C:\Users\HP\AppData\Local\Temp\ccZZpL3K.o
+ .text          0x00000000        0x0 C:\Users\HP\AppData\Local\Temp\cc6IKGP6.o
+ .data          0x00000000        0x0 C:\Users\HP\AppData\Local\Temp\cc6IKGP6.o
+ .bss           0x00000000        0x0 C:\Users\HP\AppData\Local\Temp\cc6IKGP6.o
+ .reginfo       0x00000000       0x18 C:\Users\HP\AppData\Local\Temp\cc6IKGP6.o
  .MIPS.abiflags
-                0x00000000       0x18 C:\Users\HP\AppData\Local\Temp\ccMnMnKa.o
- .pdr           0x00000000        0x0 C:\Users\HP\AppData\Local\Temp\ccMnMnKa.o
- .discard       0x00000000        0x4 C:\Users\HP\AppData\Local\Temp\ccMnMnKa.o
+                0x00000000       0x18 C:\Users\HP\AppData\Local\Temp\cc6IKGP6.o
+ .pdr           0x00000000        0x0 C:\Users\HP\AppData\Local\Temp\cc6IKGP6.o
+ .discard       0x00000000        0x4 C:\Users\HP\AppData\Local\Temp\cc6IKGP6.o
  .text          0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\software-debug-break.o
  .data          0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\software-debug-break.o
  .bss           0x00000000        0x0 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\software-debug-break.o
@@ -768,16 +771,16 @@ END GROUP
 
 .reset          0xbd000000      0x178
  *(.reset)
- .reset         0xbd000000       0x18 C:\Users\HP\AppData\Local\Temp\ccgWbIT3.o
+ .reset         0xbd000000       0x18 C:\Users\HP\AppData\Local\Temp\cc2PrEvu.o
                 0xbd000000                _reset
  *(.reset.startup)
  .reset.startup
-                0xbd000018      0x160 C:\Users\HP\AppData\Local\Temp\ccgWbIT3.o
+                0xbd000018      0x160 C:\Users\HP\AppData\Local\Temp\cc2PrEvu.o
                 0xbd000018                _startup
 
 .app_excpt      0x9d001180       0x10
  *(.gen_handler)
- .gen_handler   0x9d001180       0x10 C:\Users\HP\AppData\Local\Temp\ccgWbIT3.o
+ .gen_handler   0x9d001180       0x10 C:\Users\HP\AppData\Local\Temp\cc2PrEvu.o
 
 .vectors        0x9d001200       0x58
                 0x9d001200                        . = ALIGN (0x4)
@@ -2068,7 +2071,7 @@ END GROUP
  *.elf(.debug_sfnames)
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x790
+.debug_aranges  0x00000000      0x7a0
  *.elf(.debug_aranges)
  *(.debug_aranges)
  .debug_aranges
@@ -2098,41 +2101,41 @@ END GROUP
  .debug_aranges
                 0x00000410       0x60 build/default/debug/_ext/362756510/flash_eeprom.o
  .debug_aranges
-                0x00000470       0x90 build/default/debug/_ext/1375476428/boot_handler.o
+                0x00000470       0xa0 build/default/debug/_ext/1375476428/boot_handler.o
  .debug_aranges
-                0x00000500       0x30 build/default/debug/_ext/1375476428/device_startup.o
+                0x00000510       0x30 build/default/debug/_ext/1375476428/device_startup.o
  .debug_aranges
-                0x00000530       0x40 build/default/debug/_ext/1375476428/diagnostics.o
+                0x00000540       0x40 build/default/debug/_ext/1375476428/diagnostics.o
  .debug_aranges
-                0x00000570       0x18 build/default/debug/_ext/1375476428/mcu_config.o
+                0x00000580       0x18 build/default/debug/_ext/1375476428/mcu_config.o
  .debug_aranges
-                0x00000588       0x98 build/default/debug/_ext/1375476428/tuning.o
+                0x00000598       0x98 build/default/debug/_ext/1375476428/tuning.o
  .debug_aranges
-                0x00000620       0x30 build/default/debug/_ext/1200941409/state_engine.o
+                0x00000630       0x30 build/default/debug/_ext/1200941409/state_engine.o
  .debug_aranges
-                0x00000650       0x20 build/default/debug/_ext/1360937237/main.o
+                0x00000660       0x20 build/default/debug/_ext/1360937237/main.o
  .debug_aranges
-                0x00000670       0x40 C:\Users\HP\AppData\Local\Temp\ccgWbIT3.o
+                0x00000680       0x40 C:\Users\HP\AppData\Local\Temp\cc2PrEvu.o
  .debug_aranges
-                0x000006b0       0x20 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\software-debug-break.o
+                0x000006c0       0x20 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\software-debug-break.o
  .debug_aranges
-                0x000006d0       0x20 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-reset.o)
+                0x000006e0       0x20 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-reset.o)
  .debug_aranges
-                0x000006f0       0x20 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-bootstrap.o)
+                0x00000700       0x20 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-bootstrap.o)
  .debug_aranges
-                0x00000710       0x20 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(defaultinterrupt.o)
+                0x00000720       0x20 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(defaultinterrupt.o)
  .debug_aranges
-                0x00000730       0x20 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcmp.o)
+                0x00000740       0x20 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcmp.o)
  .debug_aranges
-                0x00000750       0x20 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcpy.o)
+                0x00000760       0x20 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcpy.o)
  .debug_aranges
-                0x00000770       0x20 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memset.o)
+                0x00000780       0x20 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memset.o)
 
 .debug_pubnames
  *.elf(.debug_pubnames)
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x9723
+.debug_info     0x00000000     0x9735
  *.elf(.debug_info .gnu.linkonce.wi.*)
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0xca2 build/default/debug/_ext/1984168316/plib_canfd1.o
@@ -2148,23 +2151,23 @@ END GROUP
  .debug_info    0x000032b6      0x500 build/default/debug/_ext/362756510/driver_CANbus.o
  .debug_info    0x000037b6      0x46b build/default/debug/_ext/362756510/driver_UART.o
  .debug_info    0x00003c21      0x8f7 build/default/debug/_ext/362756510/flash_eeprom.o
- .debug_info    0x00004518      0xe86 build/default/debug/_ext/1375476428/boot_handler.o
- .debug_info    0x0000539e      0x348 build/default/debug/_ext/1375476428/device_startup.o
- .debug_info    0x000056e6      0x41e build/default/debug/_ext/1375476428/diagnostics.o
- .debug_info    0x00005b04      0x6fb build/default/debug/_ext/1375476428/mcu_config.o
- .debug_info    0x000061ff     0x2647 build/default/debug/_ext/1375476428/tuning.o
- .debug_info    0x00008846      0x949 build/default/debug/_ext/1200941409/state_engine.o
- .debug_info    0x0000918f      0x123 build/default/debug/_ext/1360937237/main.o
- .debug_info    0x000092b2       0x69 C:\Users\HP\AppData\Local\Temp\ccgWbIT3.o
- .debug_info    0x0000931b       0x40 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\software-debug-break.o
- .debug_info    0x0000935b       0x40 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-reset.o)
- .debug_info    0x0000939b       0x40 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-bootstrap.o)
- .debug_info    0x000093db       0x9b C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(defaultinterrupt.o)
- .debug_info    0x00009476       0xe6 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcmp.o)
- .debug_info    0x0000955c       0xff C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcpy.o)
- .debug_info    0x0000965b       0xc8 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memset.o)
+ .debug_info    0x00004518      0xea5 build/default/debug/_ext/1375476428/boot_handler.o
+ .debug_info    0x000053bd      0x348 build/default/debug/_ext/1375476428/device_startup.o
+ .debug_info    0x00005705      0x41e build/default/debug/_ext/1375476428/diagnostics.o
+ .debug_info    0x00005b23      0x6fb build/default/debug/_ext/1375476428/mcu_config.o
+ .debug_info    0x0000621e     0x263a build/default/debug/_ext/1375476428/tuning.o
+ .debug_info    0x00008858      0x949 build/default/debug/_ext/1200941409/state_engine.o
+ .debug_info    0x000091a1      0x123 build/default/debug/_ext/1360937237/main.o
+ .debug_info    0x000092c4       0x69 C:\Users\HP\AppData\Local\Temp\cc2PrEvu.o
+ .debug_info    0x0000932d       0x40 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\software-debug-break.o
+ .debug_info    0x0000936d       0x40 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-reset.o)
+ .debug_info    0x000093ad       0x40 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-bootstrap.o)
+ .debug_info    0x000093ed       0x9b C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(defaultinterrupt.o)
+ .debug_info    0x00009488       0xe6 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcmp.o)
+ .debug_info    0x0000956e       0xff C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcpy.o)
+ .debug_info    0x0000966d       0xc8 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memset.o)
 
-.debug_abbrev   0x00000000     0x24f6
+.debug_abbrev   0x00000000     0x24c7
  *.elf(.debug_abbrev)
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x2ec build/default/debug/_ext/1984168316/plib_canfd1.o
@@ -2180,23 +2183,23 @@ END GROUP
  .debug_abbrev  0x00000fc6      0x1d8 build/default/debug/_ext/362756510/driver_CANbus.o
  .debug_abbrev  0x0000119e      0x1eb build/default/debug/_ext/362756510/driver_UART.o
  .debug_abbrev  0x00001389      0x2b9 build/default/debug/_ext/362756510/flash_eeprom.o
- .debug_abbrev  0x00001642      0x361 build/default/debug/_ext/1375476428/boot_handler.o
- .debug_abbrev  0x000019a3      0x1a0 build/default/debug/_ext/1375476428/device_startup.o
- .debug_abbrev  0x00001b43      0x13e build/default/debug/_ext/1375476428/diagnostics.o
- .debug_abbrev  0x00001c81       0x48 build/default/debug/_ext/1375476428/mcu_config.o
- .debug_abbrev  0x00001cc9      0x254 build/default/debug/_ext/1375476428/tuning.o
- .debug_abbrev  0x00001f1d      0x1f8 build/default/debug/_ext/1200941409/state_engine.o
- .debug_abbrev  0x00002115       0xce build/default/debug/_ext/1360937237/main.o
- .debug_abbrev  0x000021e3       0x1f C:\Users\HP\AppData\Local\Temp\ccgWbIT3.o
- .debug_abbrev  0x00002202       0x30 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\software-debug-break.o
- .debug_abbrev  0x00002232       0x30 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-reset.o)
- .debug_abbrev  0x00002262       0x30 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-bootstrap.o)
- .debug_abbrev  0x00002292       0x93 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(defaultinterrupt.o)
- .debug_abbrev  0x00002325       0x96 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcmp.o)
- .debug_abbrev  0x000023bb       0xaa C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcpy.o)
- .debug_abbrev  0x00002465       0x91 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memset.o)
+ .debug_abbrev  0x00001642      0x343 build/default/debug/_ext/1375476428/boot_handler.o
+ .debug_abbrev  0x00001985      0x1a0 build/default/debug/_ext/1375476428/device_startup.o
+ .debug_abbrev  0x00001b25      0x13e build/default/debug/_ext/1375476428/diagnostics.o
+ .debug_abbrev  0x00001c63       0x48 build/default/debug/_ext/1375476428/mcu_config.o
+ .debug_abbrev  0x00001cab      0x243 build/default/debug/_ext/1375476428/tuning.o
+ .debug_abbrev  0x00001eee      0x1f8 build/default/debug/_ext/1200941409/state_engine.o
+ .debug_abbrev  0x000020e6       0xce build/default/debug/_ext/1360937237/main.o
+ .debug_abbrev  0x000021b4       0x1f C:\Users\HP\AppData\Local\Temp\cc2PrEvu.o
+ .debug_abbrev  0x000021d3       0x30 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\software-debug-break.o
+ .debug_abbrev  0x00002203       0x30 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-reset.o)
+ .debug_abbrev  0x00002233       0x30 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-bootstrap.o)
+ .debug_abbrev  0x00002263       0x93 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(defaultinterrupt.o)
+ .debug_abbrev  0x000022f6       0x96 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcmp.o)
+ .debug_abbrev  0x0000238c       0xaa C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcpy.o)
+ .debug_abbrev  0x00002436       0x91 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memset.o)
 
-.debug_line     0x00000000     0x5c80
+.debug_line     0x00000000     0x5cb6
  *.elf(.debug_line)
  *(.debug_line)
  .debug_line    0x00000000      0xa4c build/default/debug/_ext/1984168316/plib_canfd1.o
@@ -2212,23 +2215,23 @@ END GROUP
  .debug_line    0x00002483      0x22c build/default/debug/_ext/362756510/driver_CANbus.o
  .debug_line    0x000026af      0x3cc build/default/debug/_ext/362756510/driver_UART.o
  .debug_line    0x00002a7b      0x4b8 build/default/debug/_ext/362756510/flash_eeprom.o
- .debug_line    0x00002f33      0xb36 build/default/debug/_ext/1375476428/boot_handler.o
- .debug_line    0x00003a69      0x1e5 build/default/debug/_ext/1375476428/device_startup.o
- .debug_line    0x00003c4e      0x188 build/default/debug/_ext/1375476428/diagnostics.o
- .debug_line    0x00003dd6       0x4f build/default/debug/_ext/1375476428/mcu_config.o
- .debug_line    0x00003e25     0x12b9 build/default/debug/_ext/1375476428/tuning.o
- .debug_line    0x000050de      0x255 build/default/debug/_ext/1200941409/state_engine.o
- .debug_line    0x00005333      0x18a build/default/debug/_ext/1360937237/main.o
- .debug_line    0x000054bd      0x149 C:\Users\HP\AppData\Local\Temp\ccgWbIT3.o
- .debug_line    0x00005606       0xb1 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\software-debug-break.o
- .debug_line    0x000056b7       0xa5 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-reset.o)
- .debug_line    0x0000575c       0xa9 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-bootstrap.o)
- .debug_line    0x00005805       0xd3 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(defaultinterrupt.o)
- .debug_line    0x000058d8       0xd7 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcmp.o)
- .debug_line    0x000059af      0x16d C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcpy.o)
- .debug_line    0x00005b1c      0x164 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memset.o)
+ .debug_line    0x00002f33      0xb6c build/default/debug/_ext/1375476428/boot_handler.o
+ .debug_line    0x00003a9f      0x1e5 build/default/debug/_ext/1375476428/device_startup.o
+ .debug_line    0x00003c84      0x188 build/default/debug/_ext/1375476428/diagnostics.o
+ .debug_line    0x00003e0c       0x4f build/default/debug/_ext/1375476428/mcu_config.o
+ .debug_line    0x00003e5b     0x12b9 build/default/debug/_ext/1375476428/tuning.o
+ .debug_line    0x00005114      0x255 build/default/debug/_ext/1200941409/state_engine.o
+ .debug_line    0x00005369      0x18a build/default/debug/_ext/1360937237/main.o
+ .debug_line    0x000054f3      0x149 C:\Users\HP\AppData\Local\Temp\cc2PrEvu.o
+ .debug_line    0x0000563c       0xb1 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\software-debug-break.o
+ .debug_line    0x000056ed       0xa5 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-reset.o)
+ .debug_line    0x00005792       0xa9 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-bootstrap.o)
+ .debug_line    0x0000583b       0xd3 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(defaultinterrupt.o)
+ .debug_line    0x0000590e       0xd7 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcmp.o)
+ .debug_line    0x000059e5      0x16d C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcpy.o)
+ .debug_line    0x00005b52      0x164 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memset.o)
 
-.debug_frame    0x00000000      0xfd4
+.debug_frame    0x00000000      0xff4
  *.elf(.debug_frame)
  *(.debug_frame)
  .debug_frame   0x00000000      0x110 build/default/debug/_ext/1984168316/plib_canfd1.o
@@ -2244,52 +2247,52 @@ END GROUP
  .debug_frame   0x00000848       0x58 build/default/debug/_ext/362756510/driver_CANbus.o
  .debug_frame   0x000008a0       0x4c build/default/debug/_ext/362756510/driver_UART.o
  .debug_frame   0x000008ec      0x120 build/default/debug/_ext/362756510/flash_eeprom.o
- .debug_frame   0x00000a0c      0x1c4 build/default/debug/_ext/1375476428/boot_handler.o
- .debug_frame   0x00000bd0       0x5c build/default/debug/_ext/1375476428/device_startup.o
- .debug_frame   0x00000c2c       0x80 build/default/debug/_ext/1375476428/diagnostics.o
- .debug_frame   0x00000cac      0x1c8 build/default/debug/_ext/1375476428/tuning.o
- .debug_frame   0x00000e74       0x58 build/default/debug/_ext/1200941409/state_engine.o
- .debug_frame   0x00000ecc       0x28 build/default/debug/_ext/1360937237/main.o
- .debug_frame   0x00000ef4       0x20 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\software-debug-break.o
- .debug_frame   0x00000f14       0x20 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-reset.o)
- .debug_frame   0x00000f34       0x20 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-bootstrap.o)
- .debug_frame   0x00000f54       0x20 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(defaultinterrupt.o)
- .debug_frame   0x00000f74       0x20 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcmp.o)
- .debug_frame   0x00000f94       0x20 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcpy.o)
- .debug_frame   0x00000fb4       0x20 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memset.o)
+ .debug_frame   0x00000a0c      0x1e4 build/default/debug/_ext/1375476428/boot_handler.o
+ .debug_frame   0x00000bf0       0x5c build/default/debug/_ext/1375476428/device_startup.o
+ .debug_frame   0x00000c4c       0x80 build/default/debug/_ext/1375476428/diagnostics.o
+ .debug_frame   0x00000ccc      0x1c8 build/default/debug/_ext/1375476428/tuning.o
+ .debug_frame   0x00000e94       0x58 build/default/debug/_ext/1200941409/state_engine.o
+ .debug_frame   0x00000eec       0x28 build/default/debug/_ext/1360937237/main.o
+ .debug_frame   0x00000f14       0x20 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\software-debug-break.o
+ .debug_frame   0x00000f34       0x20 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-reset.o)
+ .debug_frame   0x00000f54       0x20 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-bootstrap.o)
+ .debug_frame   0x00000f74       0x20 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(defaultinterrupt.o)
+ .debug_frame   0x00000f94       0x20 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcmp.o)
+ .debug_frame   0x00000fb4       0x20 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcpy.o)
+ .debug_frame   0x00000fd4       0x20 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memset.o)
 
-.debug_str      0x00000000     0x3ab5
+.debug_str      0x00000000     0x3ab8
  *.elf(.debug_str)
  *(.debug_str)
- .debug_str     0x00000000     0x3ab5 build/default/debug/_ext/1984168316/plib_canfd1.o
+ .debug_str     0x00000000     0x3ab8 build/default/debug/_ext/1984168316/plib_canfd1.o
                                 0xb74 (size before relaxing)
- .debug_str     0x00003ab5      0x47b build/default/debug/_ext/60165520/plib_clk.o
- .debug_str     0x00003ab5      0x55a build/default/debug/_ext/1865200349/plib_evic.o
- .debug_str     0x00003ab5      0x56b build/default/debug/_ext/1865254177/plib_gpio.o
- .debug_str     0x00003ab5      0x892 build/default/debug/_ext/60176403/plib_nvm.o
- .debug_str     0x00003ab5      0x5db build/default/debug/_ext/60181895/plib_tmr2.o
- .debug_str     0x00003ab5      0x5de build/default/debug/_ext/1865657120/plib_uart1.o
- .debug_str     0x00003ab5      0x510 build/default/debug/_ext/1171490990/initialization.o
- .debug_str     0x00003ab5      0x3e8 build/default/debug/_ext/1171490990/interrupts.o
- .debug_str     0x00003ab5      0x423 build/default/debug/_ext/1171490990/exceptions.o
- .debug_str     0x00003ab5      0x5db build/default/debug/_ext/362756510/driver_CANbus.o
- .debug_str     0x00003ab5      0x52e build/default/debug/_ext/362756510/driver_UART.o
- .debug_str     0x00003ab5      0x5d9 build/default/debug/_ext/362756510/flash_eeprom.o
- .debug_str     0x00003ab5      0xaef build/default/debug/_ext/1375476428/boot_handler.o
- .debug_str     0x00003ab5      0x4ea build/default/debug/_ext/1375476428/device_startup.o
- .debug_str     0x00003ab5      0x47c build/default/debug/_ext/1375476428/diagnostics.o
- .debug_str     0x00003ab5      0x771 build/default/debug/_ext/1375476428/mcu_config.o
- .debug_str     0x00003ab5      0xa5c build/default/debug/_ext/1375476428/tuning.o
- .debug_str     0x00003ab5      0x82e build/default/debug/_ext/1200941409/state_engine.o
- .debug_str     0x00003ab5      0x3c1 build/default/debug/_ext/1360937237/main.o
- .debug_str     0x00003ab5       0xfb C:\Users\HP\AppData\Local\Temp\ccgWbIT3.o
- .debug_str     0x00003ab5      0x2da C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\software-debug-break.o
- .debug_str     0x00003ab5      0x2c4 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-reset.o)
- .debug_str     0x00003ab5      0x2cc C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-bootstrap.o)
- .debug_str     0x00003ab5      0x356 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(defaultinterrupt.o)
- .debug_str     0x00003ab5      0x26d C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcmp.o)
- .debug_str     0x00003ab5      0x283 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcpy.o)
- .debug_str     0x00003ab5      0x26f C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memset.o)
+ .debug_str     0x00003ab8      0x47b build/default/debug/_ext/60165520/plib_clk.o
+ .debug_str     0x00003ab8      0x55a build/default/debug/_ext/1865200349/plib_evic.o
+ .debug_str     0x00003ab8      0x56b build/default/debug/_ext/1865254177/plib_gpio.o
+ .debug_str     0x00003ab8      0x892 build/default/debug/_ext/60176403/plib_nvm.o
+ .debug_str     0x00003ab8      0x5db build/default/debug/_ext/60181895/plib_tmr2.o
+ .debug_str     0x00003ab8      0x5de build/default/debug/_ext/1865657120/plib_uart1.o
+ .debug_str     0x00003ab8      0x510 build/default/debug/_ext/1171490990/initialization.o
+ .debug_str     0x00003ab8      0x3e8 build/default/debug/_ext/1171490990/interrupts.o
+ .debug_str     0x00003ab8      0x423 build/default/debug/_ext/1171490990/exceptions.o
+ .debug_str     0x00003ab8      0x5db build/default/debug/_ext/362756510/driver_CANbus.o
+ .debug_str     0x00003ab8      0x52e build/default/debug/_ext/362756510/driver_UART.o
+ .debug_str     0x00003ab8      0x5d9 build/default/debug/_ext/362756510/flash_eeprom.o
+ .debug_str     0x00003ab8      0xaef build/default/debug/_ext/1375476428/boot_handler.o
+ .debug_str     0x00003ab8      0x4ed build/default/debug/_ext/1375476428/device_startup.o
+ .debug_str     0x00003ab8      0x47c build/default/debug/_ext/1375476428/diagnostics.o
+ .debug_str     0x00003ab8      0x771 build/default/debug/_ext/1375476428/mcu_config.o
+ .debug_str     0x00003ab8      0xa55 build/default/debug/_ext/1375476428/tuning.o
+ .debug_str     0x00003ab8      0x82e build/default/debug/_ext/1200941409/state_engine.o
+ .debug_str     0x00003ab8      0x3c5 build/default/debug/_ext/1360937237/main.o
+ .debug_str     0x00003ab8       0xfb C:\Users\HP\AppData\Local\Temp\cc2PrEvu.o
+ .debug_str     0x00003ab8      0x2da C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\software-debug-break.o
+ .debug_str     0x00003ab8      0x2c4 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-reset.o)
+ .debug_str     0x00003ab8      0x2cc C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-bootstrap.o)
+ .debug_str     0x00003ab8      0x356 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(defaultinterrupt.o)
+ .debug_str     0x00003ab8      0x26d C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcmp.o)
+ .debug_str     0x00003ab8      0x283 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcpy.o)
+ .debug_str     0x00003ab8      0x26f C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memset.o)
 
 .debug_loc      0x00000000     0x4dda
  *.elf(.debug_loc)
@@ -2340,7 +2343,7 @@ END GROUP
  *.elf(.debug_pubtypes)
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000      0x688
+.debug_ranges   0x00000000      0x698
  *.elf(.debug_ranges)
  *(.debug_ranges)
  .debug_ranges  0x00000000       0x88 build/default/debug/_ext/1984168316/plib_canfd1.o
@@ -2356,20 +2359,20 @@ END GROUP
  .debug_ranges  0x00000310       0x20 build/default/debug/_ext/362756510/driver_CANbus.o
  .debug_ranges  0x00000330       0x20 build/default/debug/_ext/362756510/driver_UART.o
  .debug_ranges  0x00000350       0xe8 build/default/debug/_ext/362756510/flash_eeprom.o
- .debug_ranges  0x00000438       0xa0 build/default/debug/_ext/1375476428/boot_handler.o
- .debug_ranges  0x000004d8       0x20 build/default/debug/_ext/1375476428/device_startup.o
- .debug_ranges  0x000004f8       0x30 build/default/debug/_ext/1375476428/diagnostics.o
- .debug_ranges  0x00000528       0x88 build/default/debug/_ext/1375476428/tuning.o
- .debug_ranges  0x000005b0       0x20 build/default/debug/_ext/1200941409/state_engine.o
- .debug_ranges  0x000005d0       0x10 build/default/debug/_ext/1360937237/main.o
- .debug_ranges  0x000005e0       0x38 C:\Users\HP\AppData\Local\Temp\ccgWbIT3.o
- .debug_ranges  0x00000618       0x10 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\software-debug-break.o
- .debug_ranges  0x00000628       0x10 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-reset.o)
- .debug_ranges  0x00000638       0x10 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-bootstrap.o)
- .debug_ranges  0x00000648       0x10 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(defaultinterrupt.o)
- .debug_ranges  0x00000658       0x10 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcmp.o)
- .debug_ranges  0x00000668       0x10 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcpy.o)
- .debug_ranges  0x00000678       0x10 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memset.o)
+ .debug_ranges  0x00000438       0xb0 build/default/debug/_ext/1375476428/boot_handler.o
+ .debug_ranges  0x000004e8       0x20 build/default/debug/_ext/1375476428/device_startup.o
+ .debug_ranges  0x00000508       0x30 build/default/debug/_ext/1375476428/diagnostics.o
+ .debug_ranges  0x00000538       0x88 build/default/debug/_ext/1375476428/tuning.o
+ .debug_ranges  0x000005c0       0x20 build/default/debug/_ext/1200941409/state_engine.o
+ .debug_ranges  0x000005e0       0x10 build/default/debug/_ext/1360937237/main.o
+ .debug_ranges  0x000005f0       0x38 C:\Users\HP\AppData\Local\Temp\cc2PrEvu.o
+ .debug_ranges  0x00000628       0x10 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\software-debug-break.o
+ .debug_ranges  0x00000638       0x10 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-reset.o)
+ .debug_ranges  0x00000648       0x10 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-bootstrap.o)
+ .debug_ranges  0x00000658       0x10 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(defaultinterrupt.o)
+ .debug_ranges  0x00000668       0x10 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcmp.o)
+ .debug_ranges  0x00000678       0x10 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcpy.o)
+ .debug_ranges  0x00000688       0x10 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memset.o)
 
 /DISCARD/
  *(.rel.dyn)
@@ -2420,13 +2423,13 @@ END GROUP
  .gnu.attributes
                 0x00000140       0x10 build/default/debug/_ext/1360937237/main.o
  .gnu.attributes
-                0x00000150       0x10 C:\Users\HP\AppData\Local\Temp\ccgWbIT3.o
+                0x00000150       0x10 C:\Users\HP\AppData\Local\Temp\cc2PrEvu.o
  .gnu.attributes
-                0x00000160       0x10 C:\Users\HP\AppData\Local\Temp\ccWyic6e.o
+                0x00000160       0x10 C:\Users\HP\AppData\Local\Temp\ccotprlA.o
  .gnu.attributes
-                0x00000170       0x10 C:\Users\HP\AppData\Local\Temp\ccosfpNB.o
+                0x00000170       0x10 C:\Users\HP\AppData\Local\Temp\ccZZpL3K.o
  .gnu.attributes
-                0x00000180       0x10 C:\Users\HP\AppData\Local\Temp\ccMnMnKa.o
+                0x00000180       0x10 C:\Users\HP\AppData\Local\Temp\cc6IKGP6.o
  .gnu.attributes
                 0x00000190       0x10 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\software-debug-break.o
  .gnu.attributes
@@ -2472,10 +2475,10 @@ END GROUP
                 0x00000001                        __DEBUG = 0x1
                 0x00000001                        __MPLAB_DEBUGGER_PICKITBASIC = 0x1
                 0x00000200                        _min_heap_size = 0x200
-LOAD C:\Users\HP\AppData\Local\Temp\ccgWbIT3.o
-LOAD C:\Users\HP\AppData\Local\Temp\ccWyic6e.o
-LOAD C:\Users\HP\AppData\Local\Temp\ccosfpNB.o
-LOAD C:\Users\HP\AppData\Local\Temp\ccMnMnKa.o
+LOAD C:\Users\HP\AppData\Local\Temp\cc2PrEvu.o
+LOAD C:\Users\HP\AppData\Local\Temp\ccotprlA.o
+LOAD C:\Users\HP\AppData\Local\Temp\ccZZpL3K.o
+LOAD C:\Users\HP\AppData\Local\Temp\cc6IKGP6.o
 LOAD C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\software-debug-break.o
 LOAD C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\pic32_software_reset.o
 LOAD C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/fpu64\libgcc.a
@@ -2515,10 +2518,10 @@ LOAD data_init
  .note          0x000002d0       0x18 build/default/debug/_ext/1375476428/tuning.o
  .note          0x000002e8       0x18 build/default/debug/_ext/1200941409/state_engine.o
  .note          0x00000300       0x18 build/default/debug/_ext/1360937237/main.o
- .note          0x00000318       0x18 C:\Users\HP\AppData\Local\Temp\ccgWbIT3.o
- .note          0x00000330       0x18 C:\Users\HP\AppData\Local\Temp\ccWyic6e.o
- .note          0x00000348      0x234 C:\Users\HP\AppData\Local\Temp\ccosfpNB.o
- .note          0x0000057c       0x18 C:\Users\HP\AppData\Local\Temp\ccMnMnKa.o
+ .note          0x00000318       0x18 C:\Users\HP\AppData\Local\Temp\cc2PrEvu.o
+ .note          0x00000330       0x18 C:\Users\HP\AppData\Local\Temp\ccotprlA.o
+ .note          0x00000348      0x234 C:\Users\HP\AppData\Local\Temp\ccZZpL3K.o
+ .note          0x0000057c       0x18 C:\Users\HP\AppData\Local\Temp\cc6IKGP6.o
  .note          0x00000594       0x18 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\software-debug-break.o
  .note          0x000005ac       0x18 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\pic32_software_reset.o
  .note          0x000005c4       0x18 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-reset.o)
@@ -2541,47 +2544,47 @@ LOAD data_init
 .__vector_offset_BF8105B8_data
                 0xbf8105b8       0xfc
  .__vector_offset_BF8105B8_data
-                0xbf8105b8       0xfc C:\Users\HP\AppData\Local\Temp\ccosfpNB.o
+                0xbf8105b8       0xfc C:\Users\HP\AppData\Local\Temp\ccZZpL3K.o
 
 .__vector_offset_BF8106B8_data
                 0xbf8106b8       0xa0
  .__vector_offset_BF8106B8_data
-                0xbf8106b8       0xa0 C:\Users\HP\AppData\Local\Temp\ccosfpNB.o
+                0xbf8106b8       0xa0 C:\Users\HP\AppData\Local\Temp\ccZZpL3K.o
 
 .__vector_offset_BF810848_data
                 0xbf810848       0x94
  .__vector_offset_BF810848_data
-                0xbf810848       0x94 C:\Users\HP\AppData\Local\Temp\ccosfpNB.o
+                0xbf810848       0x94 C:\Users\HP\AppData\Local\Temp\ccZZpL3K.o
 
 .__vector_offset_BF8107D0_data
                 0xbf8107d0       0x74
  .__vector_offset_BF8107D0_data
-                0xbf8107d0       0x74 C:\Users\HP\AppData\Local\Temp\ccosfpNB.o
+                0xbf8107d0       0x74 C:\Users\HP\AppData\Local\Temp\ccZZpL3K.o
 
 .__vector_offset_BF810540_data
                 0xbf810540       0x70
  .__vector_offset_BF810540_data
-                0xbf810540       0x70 C:\Users\HP\AppData\Local\Temp\ccosfpNB.o
+                0xbf810540       0x70 C:\Users\HP\AppData\Local\Temp\ccZZpL3K.o
 
 .__vector_offset_BF81079C_data
                 0xbf81079c       0x30
  .__vector_offset_BF81079C_data
-                0xbf81079c       0x30 C:\Users\HP\AppData\Local\Temp\ccosfpNB.o
+                0xbf81079c       0x30 C:\Users\HP\AppData\Local\Temp\ccZZpL3K.o
 
 .__vector_offset_BF8108F8_data
                 0xbf8108f8       0x28
  .__vector_offset_BF8108F8_data
-                0xbf8108f8       0x28 C:\Users\HP\AppData\Local\Temp\ccosfpNB.o
+                0xbf8108f8       0x28 C:\Users\HP\AppData\Local\Temp\ccZZpL3K.o
 
 .__vector_offset_BF81076C_data
                 0xbf81076c       0x24
  .__vector_offset_BF81076C_data
-                0xbf81076c       0x24 C:\Users\HP\AppData\Local\Temp\ccosfpNB.o
+                0xbf81076c       0x24 C:\Users\HP\AppData\Local\Temp\ccZZpL3K.o
 
 .__vector_offset_BF810938_data
                 0xbf810938        0x8
  .__vector_offset_BF810938_data
-                0xbf810938        0x8 C:\Users\HP\AppData\Local\Temp\ccosfpNB.o
+                0xbf810938        0x8 C:\Users\HP\AppData\Local\Temp\ccZZpL3K.o
 
 .COHERENTBSS$   0xa0000510      0x950
  .COHERENTBSS$  0xa0000510      0x950 build/default/debug/_ext/1984168316/plib_canfd1.o
@@ -2738,155 +2741,156 @@ LOAD data_init
                 0x9d001000      0x160
  .text.App_Firmware_Write_Flash
                 0x9d001000      0x160 build/default/debug/_ext/1375476428/boot_handler.o
-
-.text.Boot_APP_CRC_Handler
-                0x9d004e04      0x144
- .text.Boot_APP_CRC_Handler
-                0x9d004e04      0x144 build/default/debug/_ext/1375476428/boot_handler.o
-                0x9d004e04                Boot_APP_CRC_Handler
+                0x9d001000                App_Firmware_Write_Flash
 
 .text.Boot_App_Chunk_Handler
-                0x9d004f48      0x128
+                0x9d004e04      0x128
  .text.Boot_App_Chunk_Handler
-                0x9d004f48      0x128 build/default/debug/_ext/1375476428/boot_handler.o
-                0x9d004f48                Boot_App_Chunk_Handler
+                0x9d004e04      0x128 build/default/debug/_ext/1375476428/boot_handler.o
+                0x9d004e04                Boot_App_Chunk_Handler
 
 .text.Load_Matrix
-                0x9d005070      0x11c
+                0x9d004f2c      0x11c
  .text.Load_Matrix
-                0x9d005070      0x11c build/default/debug/_ext/1375476428/device_startup.o
-                0x9d005070                Load_Matrix
+                0x9d004f2c      0x11c build/default/debug/_ext/1375476428/device_startup.o
+                0x9d004f2c                Load_Matrix
 
 .text.Run_Boot_Handler
-                0x9d00518c      0x110
+                0x9d005048      0x110
  .text.Run_Boot_Handler
-                0x9d00518c      0x110 build/default/debug/_ext/1375476428/boot_handler.o
-                0x9d00518c                Run_Boot_Handler
+                0x9d005048      0x110 build/default/debug/_ext/1375476428/boot_handler.o
+                0x9d005048                Run_Boot_Handler
 
 .text.Boot_App_Erase_Handler
-                0x9d00529c      0x10c
+                0x9d005158      0x10c
  .text.Boot_App_Erase_Handler
-                0x9d00529c      0x10c build/default/debug/_ext/1375476428/boot_handler.o
-                0x9d00529c                Boot_App_Erase_Handler
+                0x9d005158      0x10c build/default/debug/_ext/1375476428/boot_handler.o
+                0x9d005158                Boot_App_Erase_Handler
 
 .text.CAN1_MessageReceive
-                0x9d0053a8      0x108
+                0x9d005264      0x108
  .text.CAN1_MessageReceive
-                0x9d0053a8      0x108 build/default/debug/_ext/1984168316/plib_canfd1.o
-                0x9d0053a8                CAN1_MessageReceive
+                0x9d005264      0x108 build/default/debug/_ext/1984168316/plib_canfd1.o
+                0x9d005264                CAN1_MessageReceive
 
 .text.CAN1_Initialize
-                0x9d0054b0      0x104
+                0x9d00536c      0x104
  .text.CAN1_Initialize
-                0x9d0054b0      0x104 build/default/debug/_ext/1984168316/plib_canfd1.o
-                0x9d0054b0                CAN1_Initialize
+                0x9d00536c      0x104 build/default/debug/_ext/1984168316/plib_canfd1.o
+                0x9d00536c                CAN1_Initialize
+
+.text.Boot_APP_CRC_Handler
+                0x9d005470       0xf8
+ .text.Boot_APP_CRC_Handler
+                0x9d005470       0xf8 build/default/debug/_ext/1375476428/boot_handler.o
+                0x9d005470                Boot_APP_CRC_Handler
 
 .text.page_is_valid
-                0x9d0055b4       0xf0
+                0x9d005568       0xf0
  .text.page_is_valid
-                0x9d0055b4       0xf0 build/default/debug/_ext/362756510/flash_eeprom.o
+                0x9d005568       0xf0 build/default/debug/_ext/362756510/flash_eeprom.o
 
 .text.Boot_PIC_ID_Handler
-                0x9d0056a4       0xe8
+                0x9d005658       0xe8
  .text.Boot_PIC_ID_Handler
-                0x9d0056a4       0xe8 build/default/debug/_ext/1375476428/boot_handler.o
-                0x9d0056a4                Boot_PIC_ID_Handler
+                0x9d005658       0xe8 build/default/debug/_ext/1375476428/boot_handler.o
+                0x9d005658                Boot_PIC_ID_Handler
 
 .text.STATE_ENGINE_Tasks
-                0x9d00578c       0xe8
+                0x9d005740       0xe8
  .text.STATE_ENGINE_Tasks
-                0x9d00578c       0xe8 build/default/debug/_ext/1200941409/state_engine.o
-                0x9d00578c                STATE_ENGINE_Tasks
+                0x9d005740       0xe8 build/default/debug/_ext/1200941409/state_engine.o
+                0x9d005740                STATE_ENGINE_Tasks
 
 .text.general_exception
-                0x9d005874       0xdc
+                0x9d005828       0xdc
  .text.general_exception
-                0x9d005874       0xdc C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(general-exception.o)
-                0x9d005874                _general_exception_context
+                0x9d005828       0xdc C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(general-exception.o)
+                0x9d005828                _general_exception_context
 
 .text.CAN_Tuner_Send_Zero_Angle
-                0x9d005950       0xd8
+                0x9d005904       0xd8
  .text.CAN_Tuner_Send_Zero_Angle
-                0x9d005950       0xd8 build/default/debug/_ext/1375476428/tuning.o
-                0x9d005950                CAN_Tuner_Send_Zero_Angle
+                0x9d005904       0xd8 build/default/debug/_ext/1375476428/tuning.o
+                0x9d005904                CAN_Tuner_Send_Zero_Angle
 
 .text.GPIO_Initialize
-                0x9d005a28       0xb4
+                0x9d0059dc       0xb4
  .text.GPIO_Initialize
-                0x9d005a28       0xb4 build/default/debug/_ext/1865254177/plib_gpio.o
-                0x9d005a28                GPIO_Initialize
+                0x9d0059dc       0xb4 build/default/debug/_ext/1865254177/plib_gpio.o
+                0x9d0059dc                GPIO_Initialize
 
 .text.CLK_Initialize
-                0x9d005adc       0xb0
+                0x9d005a90       0xb0
  .text.CLK_Initialize
-                0x9d005adc       0xb0 build/default/debug/_ext/60165520/plib_clk.o
-                0x9d005adc                CLK_Initialize
+                0x9d005a90       0xb0 build/default/debug/_ext/60165520/plib_clk.o
+                0x9d005a90                CLK_Initialize
 
 .text.CAN_Tuner_Handler
-                0x9d005b8c       0xb0
+                0x9d005b40       0xb0
  .text.CAN_Tuner_Handler
-                0x9d005b8c       0xb0 build/default/debug/_ext/1375476428/tuning.o
-                0x9d005b8c                CAN_Tuner_Handler
+                0x9d005b40       0xb0 build/default/debug/_ext/1375476428/tuning.o
+                0x9d005b40                CAN_Tuner_Handler
 
 .text.CANbus_read
-                0x9d005c3c       0xa4
+                0x9d005bf0       0xa4
  .text.CANbus_read
-                0x9d005c3c       0xa4 build/default/debug/_ext/362756510/driver_CANbus.o
-                0x9d005c3c                CANbus_read
+                0x9d005bf0       0xa4 build/default/debug/_ext/362756510/driver_CANbus.o
+                0x9d005bf0                CANbus_read
 
 .text.UART_Tuner_Command
-                0x9d005ce0       0x98
+                0x9d005c94       0x98
  .text.UART_Tuner_Command
-                0x9d005ce0       0x98 build/default/debug/_ext/1375476428/tuning.o
-                0x9d005ce0                UART_Tuner_Command
+                0x9d005c94       0x98 build/default/debug/_ext/1375476428/tuning.o
+                0x9d005c94                UART_Tuner_Command
 
 .text.state_init
-                0x9d005d78       0x98
+                0x9d005d2c       0x98
  .text.state_init
-                0x9d005d78       0x98 build/default/debug/_ext/1200941409/state_engine.o
-                0x9d005d78                state_init
+                0x9d005d2c       0x98 build/default/debug/_ext/1200941409/state_engine.o
+                0x9d005d2c                state_init
 
 .text.Boot_Status_Handler
-                0x9d005e10       0x90
+                0x9d005dc4       0x90
  .text.Boot_Status_Handler
-                0x9d005e10       0x90 build/default/debug/_ext/1375476428/boot_handler.o
-                0x9d005e10                Boot_Status_Handler
+                0x9d005dc4       0x90 build/default/debug/_ext/1375476428/boot_handler.o
+                0x9d005dc4                Boot_Status_Handler
 
 .text.SYS_Initialize
-                0x9d005ea0       0x8c
+                0x9d005e54       0x8c
  .text.SYS_Initialize
-                0x9d005ea0       0x8c build/default/debug/_ext/1171490990/initialization.o
-                0x9d005ea0                SYS_Initialize
+                0x9d005e54       0x8c build/default/debug/_ext/1171490990/initialization.o
+                0x9d005e54                SYS_Initialize
 
 .text.CAN_Tuner_Write_Flash
-                0x9d005f2c       0x8c
+                0x9d005ee0       0x8c
  .text.CAN_Tuner_Write_Flash
-                0x9d005f2c       0x8c build/default/debug/_ext/1375476428/tuning.o
-                0x9d005f2c                CAN_Tuner_Write_Flash
+                0x9d005ee0       0x8c build/default/debug/_ext/1375476428/tuning.o
+                0x9d005ee0                CAN_Tuner_Write_Flash
 
 .text.NVM_StartOperationAtAddress
-                0x9d005fb8       0x80
+                0x9d005f6c       0x80
  .text.NVM_StartOperationAtAddress
-                0x9d005fb8       0x80 build/default/debug/_ext/60176403/plib_nvm.o
+                0x9d005f6c       0x80 build/default/debug/_ext/60176403/plib_nvm.o
 
-.text           0x9d006038       0x7c
- .text          0x9d006038       0x7c C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(pic32_data_init_core.o)
-                0x9d006038                __dinit_copy_val_data
-                0x9d006038                __dinit_decompress
-                0x9d006038                __dinit_copy_emb
-                0x9d006040                __pic32_data_init
+.text           0x9d005fec       0x7c
+ .text          0x9d005fec       0x7c C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(pic32_data_init_core.o)
+                0x9d005fec                __dinit_copy_val_data
+                0x9d005fec                __dinit_decompress
+                0x9d005fec                __dinit_copy_emb
+                0x9d005ff4                __pic32_data_init
 
 .text.C0_send_TU_data_CAN
-                0x9d0060b4       0x74
+                0x9d006068       0x74
  .text.C0_send_TU_data_CAN
-                0x9d0060b4       0x74 build/default/debug/_ext/1375476428/diagnostics.o
-                0x9d0060b4                C0_send_TU_data_CAN
+                0x9d006068       0x74 build/default/debug/_ext/1375476428/diagnostics.o
+                0x9d006068                C0_send_TU_data_CAN
 
 .text.UART_Tuner_Send_PIC_ID
-                0x9d006128       0x74
+                0x9d0060dc       0x74
  .text.UART_Tuner_Send_PIC_ID
-                0x9d006128       0x74 build/default/debug/_ext/1375476428/tuning.o
-                0x9d006128                UART_Tuner_Send_PIC_ID
+                0x9d0060dc       0x74 build/default/debug/_ext/1375476428/tuning.o
+                0x9d0060dc                UART_Tuner_Send_PIC_ID
 
 .text.FLASH_EEPROM_Read_Page
                 0x9d001190       0x70
@@ -2895,175 +2899,182 @@ LOAD data_init
                 0x9d001190                FLASH_EEPROM_Read_Page
 
 .text.CAN_Tuner_Send_PIC_ID_1
-                0x9d00619c       0x6c
+                0x9d006150       0x6c
  .text.CAN_Tuner_Send_PIC_ID_1
-                0x9d00619c       0x6c build/default/debug/_ext/1375476428/tuning.o
-                0x9d00619c                CAN_Tuner_Send_PIC_ID_1
+                0x9d006150       0x6c build/default/debug/_ext/1375476428/tuning.o
+                0x9d006150                CAN_Tuner_Send_PIC_ID_1
 
 .text.CAN_Tuner_Send_PIC_ID_2
-                0x9d006208       0x6c
+                0x9d0061bc       0x6c
  .text.CAN_Tuner_Send_PIC_ID_2
-                0x9d006208       0x6c build/default/debug/_ext/1375476428/tuning.o
-                0x9d006208                CAN_Tuner_Send_PIC_ID_2
+                0x9d0061bc       0x6c build/default/debug/_ext/1375476428/tuning.o
+                0x9d0061bc                CAN_Tuner_Send_PIC_ID_2
 
 .text.calculate_crc
-                0x9d006274       0x60
+                0x9d006228       0x60
  .text.calculate_crc
-                0x9d006274       0x60 build/default/debug/_ext/362756510/flash_eeprom.o
+                0x9d006228       0x60 build/default/debug/_ext/362756510/flash_eeprom.o
+
+.text.Boot_APP_CRC32_Software
+                0x9d006288       0x5c
+ .text.Boot_APP_CRC32_Software
+                0x9d006288       0x5c build/default/debug/_ext/1375476428/boot_handler.o
+                0x9d006288                Boot_APP_CRC32_Software
 
 .text.TIMER_2_InterruptHandler
-                0x9d0062d4       0x58
+                0x9d0062e4       0x58
  .text.TIMER_2_InterruptHandler
-                0x9d0062d4       0x58 build/default/debug/_ext/60181895/plib_tmr2.o
-                0x9d0062d4                TIMER_2_InterruptHandler
+                0x9d0062e4       0x58 build/default/debug/_ext/60181895/plib_tmr2.o
+                0x9d0062e4                TIMER_2_InterruptHandler
 
 .text.main_entry
-                0x9d00632c       0x54
+                0x9d00633c       0x54
  .text.main_entry
-                0x9d00632c       0x54 C:\Users\HP\AppData\Local\Temp\ccgWbIT3.o
-                0x9d006360                __crt0_exit
+                0x9d00633c       0x54 C:\Users\HP\AppData\Local\Temp\cc2PrEvu.o
+                0x9d006370                __crt0_exit
 
 .text.EVIC_Initialize
-                0x9d006380       0x50
+                0x9d006390       0x50
  .text.EVIC_Initialize
-                0x9d006380       0x50 build/default/debug/_ext/1865200349/plib_evic.o
-                0x9d006380                EVIC_Initialize
+                0x9d006390       0x50 build/default/debug/_ext/1865200349/plib_evic.o
+                0x9d006390                EVIC_Initialize
 
 .text.Boot_Stay_In_Boot_Handler
-                0x9d0063d0       0x50
+                0x9d0063e0       0x50
  .text.Boot_Stay_In_Boot_Handler
-                0x9d0063d0       0x50 build/default/debug/_ext/1375476428/boot_handler.o
-                0x9d0063d0                Boot_Stay_In_Boot_Handler
+                0x9d0063e0       0x50 build/default/debug/_ext/1375476428/boot_handler.o
+                0x9d0063e0                Boot_Stay_In_Boot_Handler
 
 .text.Boot_App_Jump
-                0x9d006420       0x4c
+                0x9d006430       0x4c
  .text.Boot_App_Jump
-                0x9d006420       0x4c build/default/debug/_ext/1375476428/boot_handler.o
-                0x9d006420                Boot_App_Jump
+                0x9d006430       0x4c build/default/debug/_ext/1375476428/boot_handler.o
+                0x9d006430                Boot_App_Jump
 
 .text.Get_PIC_ID
-                0x9d00646c       0x4c
+                0x9d00647c       0x4c
  .text.Get_PIC_ID
-                0x9d00646c       0x4c build/default/debug/_ext/1375476428/device_startup.o
-                0x9d00646c                Get_PIC_ID
+                0x9d00647c       0x4c build/default/debug/_ext/1375476428/device_startup.o
+                0x9d00647c                Get_PIC_ID
 
 .text.CAN_Send_Status
-                0x9d0064b8       0x4c
+                0x9d0064c8       0x4c
  .text.CAN_Send_Status
-                0x9d0064b8       0x4c build/default/debug/_ext/1375476428/tuning.o
-                0x9d0064b8                CAN_Send_Status
+                0x9d0064c8       0x4c build/default/debug/_ext/1375476428/tuning.o
+                0x9d0064c8                CAN_Send_Status
 
-.text           0x9d006504       0x44
- .text          0x9d006504       0x44 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\pic32_software_reset.o
-                0x9d006504                __pic32_software_reset
+.text           0x9d006514       0x44
+ .text          0x9d006514       0x44 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\pic32_software_reset.o
+                0x9d006514                __pic32_software_reset
 
 .text.send_byte_uart
-                0x9d006548       0x40
+                0x9d006558       0x40
  .text.send_byte_uart
-                0x9d006548       0x40 build/default/debug/_ext/362756510/driver_UART.o
-                0x9d006548                send_byte_uart
+                0x9d006558       0x40 build/default/debug/_ext/362756510/driver_UART.o
+                0x9d006558                send_byte_uart
 
 .text.Boot_App_Chunk_Ack
-                0x9d006588       0x40
+                0x9d006598       0x40
  .text.Boot_App_Chunk_Ack
-                0x9d006588       0x40 build/default/debug/_ext/1375476428/boot_handler.o
+                0x9d006598       0x40 build/default/debug/_ext/1375476428/boot_handler.o
+                0x9d006598                Boot_App_Chunk_Ack
 
 .text.NVM_InterruptHandler
-                0x9d0065c8       0x3c
+                0x9d0065d8       0x3c
  .text.NVM_InterruptHandler
-                0x9d0065c8       0x3c build/default/debug/_ext/60176403/plib_nvm.o
-                0x9d0065c8                NVM_InterruptHandler
+                0x9d0065d8       0x3c build/default/debug/_ext/60176403/plib_nvm.o
+                0x9d0065d8                NVM_InterruptHandler
 
 .text.TMR2_Initialize
-                0x9d006604       0x3c
+                0x9d006614       0x3c
  .text.TMR2_Initialize
-                0x9d006604       0x3c build/default/debug/_ext/60181895/plib_tmr2.o
-                0x9d006604                TMR2_Initialize
+                0x9d006614       0x3c build/default/debug/_ext/60181895/plib_tmr2.o
+                0x9d006614                TMR2_Initialize
 
 .text.UART1_Initialize
-                0x9d006640       0x38
+                0x9d006650       0x38
  .text.UART1_Initialize
-                0x9d006640       0x38 build/default/debug/_ext/1865657120/plib_uart1.o
-                0x9d006640                UART1_Initialize
+                0x9d006650       0x38 build/default/debug/_ext/1865657120/plib_uart1.o
+                0x9d006650                UART1_Initialize
 
-.text.memcmp    0x9d006678       0x38
- .text.memcmp   0x9d006678       0x38 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcmp.o)
-                0x9d006678                memcmp
+.text.memcmp    0x9d006688       0x38
+ .text.memcmp   0x9d006688       0x38 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcmp.o)
+                0x9d006688                memcmp
 
 .text.NVM_RowWrite
-                0x9d0066b0       0x34
+                0x9d0066c0       0x34
  .text.NVM_RowWrite
-                0x9d0066b0       0x34 build/default/debug/_ext/60176403/plib_nvm.o
-                0x9d0066b0                NVM_RowWrite
+                0x9d0066c0       0x34 build/default/debug/_ext/60176403/plib_nvm.o
+                0x9d0066c0                NVM_RowWrite
 
 .text.UART_Tuner_Send_Zero_Angle
-                0x9d0066e4       0x34
+                0x9d0066f4       0x34
  .text.UART_Tuner_Send_Zero_Angle
-                0x9d0066e4       0x34 build/default/debug/_ext/1375476428/tuning.o
-                0x9d0066e4                UART_Tuner_Send_Zero_Angle
+                0x9d0066f4       0x34 build/default/debug/_ext/1375476428/tuning.o
+                0x9d0066f4                UART_Tuner_Send_Zero_Angle
 
-.text.main      0x9d006718       0x34
- .text.main     0x9d006718       0x34 build/default/debug/_ext/1360937237/main.o
-                0x9d006718                main
+.text.main      0x9d006728       0x34
+ .text.main     0x9d006728       0x34 build/default/debug/_ext/1360937237/main.o
+                0x9d006728                main
 
 .text.NVM_WordWrite
-                0x9d00674c       0x30
+                0x9d00675c       0x30
  .text.NVM_WordWrite
-                0x9d00674c       0x30 build/default/debug/_ext/60176403/plib_nvm.o
-                0x9d00674c                NVM_WordWrite
+                0x9d00675c       0x30 build/default/debug/_ext/60176403/plib_nvm.o
+                0x9d00675c                NVM_WordWrite
 
 .text.CANbus_write
-                0x9d00677c       0x30
+                0x9d00678c       0x30
  .text.CANbus_write
-                0x9d00677c       0x30 build/default/debug/_ext/362756510/driver_CANbus.o
-                0x9d00677c                CANbus_write
+                0x9d00678c       0x30 build/default/debug/_ext/362756510/driver_CANbus.o
+                0x9d00678c                CANbus_write
 
 .text.flash_wait_complete
-                0x9d0067ac       0x30
+                0x9d0067bc       0x30
  .text.flash_wait_complete
-                0x9d0067ac       0x30 build/default/debug/_ext/362756510/flash_eeprom.o
+                0x9d0067bc       0x30 build/default/debug/_ext/362756510/flash_eeprom.o
 
-.text.NVM_Read  0x9d0067dc       0x2c
+.text.NVM_Read  0x9d0067ec       0x2c
  .text.NVM_Read
-                0x9d0067dc       0x2c build/default/debug/_ext/60176403/plib_nvm.o
-                0x9d0067dc                NVM_Read
+                0x9d0067ec       0x2c build/default/debug/_ext/60176403/plib_nvm.o
+                0x9d0067ec                NVM_Read
 
-.text.memcpy    0x9d006808       0x2c
- .text.memcpy   0x9d006808       0x2c C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcpy.o)
-                0x9d006808                memcpy
+.text.memcpy    0x9d006818       0x2c
+ .text.memcpy   0x9d006818       0x2c C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memcpy.o)
+                0x9d006818                memcpy
 
 .text.NVM_WriteUnlockSequence
-                0x9d006834       0x28
+                0x9d006844       0x28
  .text.NVM_WriteUnlockSequence
-                0x9d006834       0x28 build/default/debug/_ext/60176403/plib_nvm.o
+                0x9d006844       0x28 build/default/debug/_ext/60176403/plib_nvm.o
 
 .text.drive_init
-                0x9d00685c       0x28
+                0x9d00686c       0x28
  .text.drive_init
-                0x9d00685c       0x28 build/default/debug/_ext/1200941409/state_engine.o
-                0x9d00685c                drive_init
+                0x9d00686c       0x28 build/default/debug/_ext/1200941409/state_engine.o
+                0x9d00686c                drive_init
 
-.text.memset    0x9d006884       0x28
- .text.memset   0x9d006884       0x28 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memset.o)
-                0x9d006884                memset
+.text.memset    0x9d006894       0x28
+ .text.memset   0x9d006894       0x28 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libc-size-musl.a(memset.o)
+                0x9d006894                memset
 
 .text.NVM_Initialize
-                0x9d0068ac       0x24
+                0x9d0068bc       0x24
  .text.NVM_Initialize
-                0x9d0068ac       0x24 build/default/debug/_ext/60176403/plib_nvm.o
-                0x9d0068ac                NVM_Initialize
+                0x9d0068bc       0x24 build/default/debug/_ext/60176403/plib_nvm.o
+                0x9d0068bc                NVM_Initialize
 
-.text.EEPROM_Initialize
-                0x9d0068d0       0x24
- .text.EEPROM_Initialize
-                0x9d0068d0       0x24 build/default/debug/_ext/1375476428/device_startup.o
-                0x9d0068d0                EEPROM_Initialize
+.text.NVM_Memory_Initialize
+                0x9d0068e0       0x24
+ .text.NVM_Memory_Initialize
+                0x9d0068e0       0x24 build/default/debug/_ext/1375476428/device_startup.o
+                0x9d0068e0                NVM_Memory_Initialize
 
 .text.send_diag_data
-                0x9d0068f4       0x24
+                0x9d006904       0x24
  .text.send_diag_data
-                0x9d0068f4       0x24 build/default/debug/_ext/1375476428/diagnostics.o
-                0x9d0068f4                send_diag_data
+                0x9d006904       0x24 build/default/debug/_ext/1375476428/diagnostics.o
+                0x9d006904                send_diag_data
 
 .text.NVM_PageErase
                 0x9d001160       0x20
@@ -3071,105 +3082,105 @@ LOAD data_init
                 0x9d001160       0x20 build/default/debug/_ext/60176403/plib_nvm.o
                 0x9d001160                NVM_PageErase
 
-.text           0x9d006918       0x20
- .text          0x9d006918       0x20 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(pic32_data_init_copy.o)
-                0x9d006918                __dinit_copy_needed
-                0x9d006918                __dinit_copy
+.text           0x9d006928       0x20
+ .text          0x9d006928       0x20 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(pic32_data_init_copy.o)
+                0x9d006928                __dinit_copy_needed
+                0x9d006928                __dinit_copy
 
 .text._general_exception_handler
-                0x9d006938       0x1c
+                0x9d006948       0x1c
  .text._general_exception_handler
-                0x9d006938       0x1c build/default/debug/_ext/1171490990/exceptions.o
-                0x9d006938                _general_exception_handler
+                0x9d006948       0x1c build/default/debug/_ext/1171490990/exceptions.o
+                0x9d006948                _general_exception_handler
 
 .text._bootstrap_exception_handler
-                0x9d006954       0x1c
+                0x9d006964       0x1c
  .text._bootstrap_exception_handler
-                0x9d006954       0x1c build/default/debug/_ext/1171490990/exceptions.o
-                0x9d006954                _bootstrap_exception_handler
+                0x9d006964       0x1c build/default/debug/_ext/1171490990/exceptions.o
+                0x9d006964                _bootstrap_exception_handler
 
-.MIPS.abiflags  0x9d006970       0x18
+.MIPS.abiflags  0x9d006980       0x18
  .MIPS.abiflags
-                0x9d006970       0x18 build/default/debug/_ext/1984168316/plib_canfd1.o
+                0x9d006980       0x18 build/default/debug/_ext/1984168316/plib_canfd1.o
 
-.rodata.cst4    0x9d006988       0x18
- .rodata.cst4   0x9d006988       0x18 build/default/debug/_ext/1375476428/boot_handler.o
+.rodata.cst4    0x9d006998       0x18
+ .rodata.cst4   0x9d006998       0x18 build/default/debug/_ext/1375476428/boot_handler.o
                                   0x8 (size before relaxing)
 
-.text           0x9d0069a0       0x30
- .text          0x9d0069a0       0x18 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-nmi-handler.o)
-                0x9d0069a0                _nmi_handler
- .text          0x9d0069b8       0x18 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(pic32_data_init_clear.o)
-                0x9d0069b8                __dinit_clear_needed
-                0x9d0069b8                __dinit_clear
+.text           0x9d0069b0       0x30
+ .text          0x9d0069b0       0x18 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-nmi-handler.o)
+                0x9d0069b0                _nmi_handler
+ .text          0x9d0069c8       0x18 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(pic32_data_init_clear.o)
+                0x9d0069c8                __dinit_clear_needed
+                0x9d0069c8                __dinit_clear
 
 .text.TMR2_Start
-                0x9d0069d0       0x14
+                0x9d0069e0       0x14
  .text.TMR2_Start
-                0x9d0069d0       0x14 build/default/debug/_ext/60181895/plib_tmr2.o
-                0x9d0069d0                TMR2_Start
+                0x9d0069e0       0x14 build/default/debug/_ext/60181895/plib_tmr2.o
+                0x9d0069e0                TMR2_Start
 
 .text.FLASH_EEPROM_Init
-                0x9d0069e4       0x14
+                0x9d0069f4       0x14
  .text.FLASH_EEPROM_Init
-                0x9d0069e4       0x14 build/default/debug/_ext/362756510/flash_eeprom.o
-                0x9d0069e4                FLASH_EEPROM_Init
+                0x9d0069f4       0x14 build/default/debug/_ext/362756510/flash_eeprom.o
+                0x9d0069f4                FLASH_EEPROM_Init
 
 .text.Boot_Is_App_Present
-                0x9d0069f8       0x14
+                0x9d006a08       0x14
  .text.Boot_Is_App_Present
-                0x9d0069f8       0x14 build/default/debug/_ext/1375476428/boot_handler.o
-                0x9d0069f8                Boot_Is_App_Present
+                0x9d006a08       0x14 build/default/debug/_ext/1375476428/boot_handler.o
+                0x9d006a08                Boot_Is_App_Present
 
-.rodata         0x9d006a0c       0x14
- .rodata        0x9d006a0c       0x14 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(pic32_data_init_core.o)
+.rodata         0x9d006a1c       0x14
+ .rodata        0x9d006a1c       0x14 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(pic32_data_init_core.o)
 
 .rodata.dlcToLength
-                0x9d006a20       0x10
+                0x9d006a30       0x10
  .rodata.dlcToLength
-                0x9d006a20       0x10 build/default/debug/_ext/1984168316/plib_canfd1.o
+                0x9d006a30       0x10 build/default/debug/_ext/1984168316/plib_canfd1.o
 
 .text.NVM_ErrorGet
-                0x9d006a30       0x10
+                0x9d006a40       0x10
  .text.NVM_ErrorGet
-                0x9d006a30       0x10 build/default/debug/_ext/60176403/plib_nvm.o
-                0x9d006a30                NVM_ErrorGet
+                0x9d006a40       0x10 build/default/debug/_ext/60176403/plib_nvm.o
+                0x9d006a40                NVM_ErrorGet
 
 .text.NVM_IsBusy
-                0x9d006a40       0x10
+                0x9d006a50       0x10
  .text.NVM_IsBusy
-                0x9d006a40       0x10 build/default/debug/_ext/60176403/plib_nvm.o
-                0x9d006a40                NVM_IsBusy
+                0x9d006a50       0x10 build/default/debug/_ext/60176403/plib_nvm.o
+                0x9d006a50                NVM_IsBusy
 
-.bev_handler    0x9d006a50       0x10
- .bev_handler   0x9d006a50       0x10 C:\Users\HP\AppData\Local\Temp\ccgWbIT3.o
+.bev_handler    0x9d006a60       0x10
+ .bev_handler   0x9d006a60       0x10 C:\Users\HP\AppData\Local\Temp\cc2PrEvu.o
 
 .text.send_data_uart
-                0x9d006a60        0xc
+                0x9d006a70        0xc
  .text.send_data_uart
-                0x9d006a60        0xc build/default/debug/_ext/362756510/driver_UART.o
-                0x9d006a60                send_data_uart
+                0x9d006a70        0xc build/default/debug/_ext/362756510/driver_UART.o
+                0x9d006a70                send_data_uart
 
 .text.__exception_handler_break
-                0x9d006a6c        0xc
+                0x9d006a7c        0xc
  .text.__exception_handler_break
-                0x9d006a6c        0xc C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\software-debug-break.o
-                0x9d006a6c                __exception_handler_break
+                0x9d006a7c        0xc C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\software-debug-break.o
+                0x9d006a7c                __exception_handler_break
 
 .text.Tuner_Init
-                0x9d006a78        0x8
+                0x9d006a88        0x8
  .text.Tuner_Init
-                0x9d006a78        0x8 build/default/debug/_ext/1375476428/tuning.o
-                0x9d006a78                Tuner_Init
+                0x9d006a88        0x8 build/default/debug/_ext/1375476428/tuning.o
+                0x9d006a88                Tuner_Init
 
 .text._on_reset
-                0x9d006a80        0x8
+                0x9d006a90        0x8
  .text._on_reset
-                0x9d006a80        0x8 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-reset.o)
-                0x9d006a80                _on_reset
+                0x9d006a90        0x8 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-reset.o)
+                0x9d006a90                _on_reset
 
 .text._on_bootstrap
-                0x9d006a88        0x8
+                0x9d006a98        0x8
  .text._on_bootstrap
-                0x9d006a88        0x8 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-bootstrap.o)
-                0x9d006a88                _on_bootstrap
+                0x9d006a98        0x8 C:/Program Files/Microchip/xc32/v5.00/bin/bin/../../lib/gcc/pic32m/13.2.1/../../../../pic32m/lib/fpu64\libpic32.a(default-on-bootstrap.o)
+                0x9d006a98                _on_bootstrap

@@ -1,5 +1,6 @@
 #include "definitions.h"
 #include "device.h"
+#include "driver.h"
 #include "middleware.h"
 
 uint32_t devsn[4];
@@ -10,7 +11,7 @@ uint8_t eepromBuffer[EEPROM_DATA_SIZE];
 float readMatrix[ROWS][COLS];
 float writeMatrix[ROWS][COLS];
 
-static int MCU_ID = 0;
+static int mcuID = 0;
 
 void Get_PIC_ID(void) {
     devsn[0] = DEVSN0;
@@ -21,7 +22,7 @@ void Get_PIC_ID(void) {
     devid = DEVID & 0x0FFFFFFFU;
 }
 
-void EEPROM_Initialize(void) {
+void NVM_Memory_Initialize(void) {
     FLASH_EEPROM_Init();
     Load_Matrix();
 }
@@ -37,12 +38,12 @@ void Load_Matrix(void) {
     //--------------------------------------------------
     __builtin_memcpy(readMatrix, eepromBuffer, sizeof (readMatrix));
 
-    MCU_ID = R_FF01_01;
+    mcuID = R_FF01_01;
 
     //--------------------------------------------------
     // Check ESC ID
     //--------------------------------------------------
-    if (MCU_ID <= 0) {
+    if (mcuID <= 0) {
         Get_Config();
     } else {
         Update_Config();

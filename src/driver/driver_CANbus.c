@@ -1,4 +1,3 @@
-#include <sys/kmem.h>
 #include "definitions.h"
 #include "driver.h"
 #include "middleware.h"
