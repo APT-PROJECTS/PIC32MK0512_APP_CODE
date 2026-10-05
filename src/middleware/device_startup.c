@@ -22,7 +22,7 @@ void Get_PIC_ID(void) {
     devid = DEVID & 0x0FFFFFFFU;
 }
 
-void NVM_Memory_Initialize(void) {
+void NVM_EEPROM_Initialize(void) {
     FLASH_EEPROM_Init();
     Load_Matrix();
 }

@@ -15,8 +15,9 @@ build/default/debug/_ext/1375476428/tuning.o: ../src/middleware/tuning.c \
  ../src/driver/driver_CANbus.h ../src/driver/driver_UART.h \
  ../src/driver/flash_eeprom.h ../src/middleware.h \
  ../src/middleware/boot_handler.h ../src/middleware/device_startup.h \
- ../src/middleware/diagnostics.h ../src/middleware/mcu_config.h \
- ../src/middleware/tuning.h
+ ../src/middleware/diagnostics.h ../src/middleware/tuning.h \
+ ../src/software.h ../src/software/state_engine.h \
+ ../src/software/mcu_config.h
 ../src/config/default/definitions.h:
 ../src/config/default/peripheral/uart/plib_uart1.h:
 ../src/config/default/device.h:
@@ -38,5 +39,7 @@ build/default/debug/_ext/1375476428/tuning.o: ../src/middleware/tuning.c \
 ../src/middleware/boot_handler.h:
 ../src/middleware/device_startup.h:
 ../src/middleware/diagnostics.h:
-../src/middleware/mcu_config.h:
 ../src/middleware/tuning.h:
+../src/software.h:
+../src/software/state_engine.h:
+../src/software/mcu_config.h:

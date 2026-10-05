@@ -14,7 +14,6 @@
 #include "middleware/boot_handler.h"
 #include "middleware/device_startup.h"
 #include "middleware/diagnostics.h"
-#include "middleware/mcu_config.h"
 #include "middleware/tuning.h"
 
 // DOM-IGNORE-BEGIN

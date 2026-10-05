@@ -1,6 +1,7 @@
 #include "definitions.h"
 #include "driver.h"
 #include "middleware.h"
+#include "software.h"
 
 #define COPY_FLOAT_TO_TX(offset, value)                                        \
   do {                                                                         \

@@ -12,7 +12,7 @@ int main(void) {
 
     GREEN_LED_Set();
 
-    NVM_Memory_Initialize();
+    NVM_EEPROM_Initialize();
 
     TMR2_Start();
 

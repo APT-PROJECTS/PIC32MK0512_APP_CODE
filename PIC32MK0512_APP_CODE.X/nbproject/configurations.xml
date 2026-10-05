@@ -47,11 +47,11 @@
         <itemPath>../src/middleware/boot_handler.h</itemPath>
         <itemPath>../src/middleware/device_startup.h</itemPath>
         <itemPath>../src/middleware/diagnostics.h</itemPath>
-        <itemPath>../src/middleware/mcu_config.h</itemPath>
         <itemPath>../src/middleware/tuning.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f3" displayName="software" projectFiles="true">
         <itemPath>../src/software/state_engine.h</itemPath>
+        <itemPath>../src/software/mcu_config.h</itemPath>
       </logicalFolder>
       <itemPath>../src/driver.h</itemPath>
       <itemPath>../src/middleware.h</itemPath>
@@ -133,11 +133,11 @@
         <itemPath>../src/middleware/boot_handler.c</itemPath>
         <itemPath>../src/middleware/device_startup.c</itemPath>
         <itemPath>../src/middleware/diagnostics.c</itemPath>
-        <itemPath>../src/middleware/mcu_config.c</itemPath>
         <itemPath>../src/middleware/tuning.c</itemPath>
       </logicalFolder>
       <logicalFolder name="f3" displayName="software" projectFiles="true">
         <itemPath>../src/software/state_engine.c</itemPath>
+        <itemPath>../src/software/mcu_config.c</itemPath>
       </logicalFolder>
       <itemPath>../src/main.c</itemPath>
     </logicalFolder>
