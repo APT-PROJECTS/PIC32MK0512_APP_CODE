@@ -12,8 +12,6 @@ int main(void) {
 
     GREEN_LED_Set();
 
-    NVM_EEPROM_Initialize();
-
     TMR2_Start();
 
     while (1) {

@@ -35,9 +35,9 @@ void CANbus_read(void) {
                 break;
             }
 
-            case CAN_ID_TUNER_SOFTWARE:
+            case TUNER_CAN_ID_SOFTWARE:
             {
-                CAN_Tuner_Handler(Rdata);
+                CAN_Tuner_Handler(msg_id, Rdata);
                 break;
             }
 
